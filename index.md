@@ -8,5 +8,4 @@
 
 ## Publications
 
-## Slides
 
