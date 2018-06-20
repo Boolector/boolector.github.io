@@ -40,7 +40,7 @@ Aina Niemetz.
 `[`[BibTex](https://cs.stanford.edu/people/niemetz/files/bibtex/2017/Niemetz-PhD-Thesis-2017.bib)`]`
 
 Mathias Preiner.
-[Lambdas, Arrays and Quantifiers](</a>://cs.stanford.edu/people/preiner/files/publications/Preiner-PhD-Thesis-2017.pdf).
+[Lambdas, Arrays and Quantifiers](http://cs.stanford.edu/people/preiner/files/publications/Preiner-PhD-Thesis-2017.pdf).
 *Dissertation* Technische Wissenschaften, Informatik, Johannes Kepler University, Linz, 2017.
 <br/>
 `[`[PDF](https://cs.stanford.edu/people/preiner/files/publications/Preiner-PhD-Thesis-2017.pdf)`]`
