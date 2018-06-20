@@ -135,12 +135,9 @@ no participation
     SMT Competition 2009
   </a>
 </h3>
-
   - **Competing Version:** Boolector 1.2
-
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV
-
   - **Awards:**
     - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
 
@@ -149,12 +146,9 @@ no participation
     SMT Competition 2008
   </a>
 </h3>
-
   - **Competing Version:** Boolector 0.4
-
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV 
-
   - **Awards:**
     - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
     - **1<sup>st</sup>** Place in QF_BV (Main Track)
