@@ -1,37 +1,161 @@
-## Welcome to GitHub Pages
+## News
 
-You can use the [editor on GitHub](https://github.com/Boolector/boolector.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Download
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Documentation
 
-### Markdown
+## Bibtex Entry
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Publications
 
-```markdown
-Syntax highlighted code block
+## Slidese
 
-# Header 1
-## Header 2
-### Header 3
+## SMT competitions
 
-- Bulleted
-- List
+<h3>
+  <a href="http://smtcomp.sourceforge.net/2017/" target="_blank">
+    SMT Competition 2017
+  </a>
+</h3>
 
-1. Numbered
-2. List
+  - **Competing Version:** Boolector 3.0-pre
 
-**Bold** and _Italic_ and `Code` text
+  - **System Description**:
+      [Boolector at the SMT Competition 2017](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2017.pdf)
 
-[Link](url) and ![Image](src)
-```
+  - **Divisions Entered:**
+    - *Main Track:*&nbsp; BV, QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  - **Awards:**
+    - **1<sup>st</sup>** Place in QF_ABV (Main Track)
+    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+    - **1<sup>st</sup>** Place in QF_UFBV (Main Track)
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Boolector/boolector.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<h3>
+  <a href="http://smtcomp.sourceforge.net/2016/" target="_blank">
+    SMT Competition 2016
+  </a>
+</h3>
 
-### Support or Contact
+  - **Competing Version:** Boolector 2.999
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  - **System Description**:
+      [Boolector at the SMT Competition 2016](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2016.pdf)
+
+  - **Divisions Entered:**
+    - *Main Track:*&nbsp; BV, UFBV, QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
+
+  - **Awards:**
+    - **1<sup>st</sup>** Place in QF_ABV (Main Track)
+    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+    - **1<sup>st</sup>** Place in QF_UFBV (Main Track)
+
+<h3>
+  <a href="http://smtcomp.sourceforge.net/2015/" target="_blank">
+    SMT Competition 2015
+  </a>
+</h3>
+
+  - **Competing Version:** Boolector 2.1.0
+
+  - **System Description**:
+      [Boolector at the SMT Competition 2015](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2015.pdf)
+
+  - **Divisions Entered:**
+    - *Main Track:*&nbsp; QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
+    - *Application Track:*&nbsp; QF_BV
+
+  - **Awards:**
+    - **1<sup>st</sup>** Place in QF_ABV (Main Track)
+    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+    - **1<sup>st</sup>** Place in QF_UFBV (Main Track)
+
+<h3>
+  <a href="http://smtcomp.sourceforge.net/2014/" target="_blank">
+    SMT Competition 2014
+  </a>
+</h3>
+
+  - **Competing Version:** Boolector 2.0.0
+
+  - **System Description**:
+      [Boolector at the SMT Competition 2014](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2014.pdf)
+
+  - **Divisions Entered:**
+    - *Main Track:*&nbsp; QF_ABV, QF_BV
+
+  - **Awards:**
+    - **1<sup>st</sup>** Place in QF_ABV (Main Track)
+    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+    - One [G&ouml;del Medal](img/goedel.jpg) in the [FLoC'14 Olympic Games](http://vsl2014.at/olympics/)
+
+<h3>
+  <a href="http://smtcomp.sourceforge.net/2012/" target="_blank">
+    SMT Competition 2012
+  </a>
+</h3>
+
+  - **Competing Version:** Boolector 1.5.110-agm
+
+  - **System Description**:
+      [Boolector at the SMT Competition 2012](http://fmv.jku.at/papers/Biere-SMT-Competition-2012.pdf)
+
+  - **Divisions Entered:**
+    - *Main Track:*&nbsp; QF_AUFBV, QF_BV
+
+  - **Awards:**
+    - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
+    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+
+<h3>
+  <a href="http://smtcomp.sourceforge.net/2011/" target="_blank">
+    SMT Competition 2011
+  </a>
+</h3>
+
+  - **Competing Version:** Boolector 1.5.23-833
+
+  - **Divisions Entered:**
+    - *Main Track:*&nbsp; QF_AUFBV, QF_BV
+
+  - **Awards:**
+    - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
+
+<h3>
+  <a href="http://smtcomp.sourceforge.net/2010/" target="_blank">
+    SMT Competition 2010
+  </a>
+</h3>
+
+no participation
+
+<h3>
+  <a href="http://smtcomp.sourceforge.net/2009/" target="_blank">
+    SMT Competition 2009
+  </a>
+</h3>
+
+  - **Competing Version:** Boolector 1.2
+
+  - **Divisions Entered:**
+    - *Main Track:*&nbsp; QF_AUFBV, QF_BV
+
+  - **Awards:**
+    - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
+
+<h3>
+  <a href="http://smtcomp.sourceforge.net/2008/" target="_blank">
+    SMT Competition 2008
+  </a>
+</h3>
+
+  - **Competing Version:** Boolector 0.4
+
+  - **Divisions Entered:**
+    - *Main Track:*&nbsp; QF_AUFBV, QF_BV 
+
+  - **Awards:**
+    - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
+    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+
