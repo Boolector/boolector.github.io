@@ -6,6 +6,5 @@
 
 ## Bibtex Entry
 
-## Publications
 
 
