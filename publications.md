@@ -14,7 +14,7 @@ volume 5 (3), pages 608-636, Springer, 2017.
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Model-Based API Testing for SMT Solvers](https://cs.stanford.edu/people/niemetz/files/publications/2017/NiemetzPreinerBiere-SMT17.pdf).
-In Proceedings of the 15th International Workshop on Satisfiability Modulo Theories (SMT'17),
+In Proceedings of the 15<sup>th</sup> International Workshop on Satisfiability Modulo Theories (SMT'17),
 10 pages, aff. with CAV'17, Heidelberg, Germany, 2017.
 <br/>
 `[`[PDF](https://cs.stanford.edu/people/niemetz/files/publications/2017/NiemetzPreinerBiere-SMT17.pdf)`]`
@@ -48,7 +48,7 @@ Mathias Preiner.
 
 Mathias Preiner, Aina Niemetz, Armin Biere.
 [Counterexample-Guided Model Synthesis](https://cs.stanford.edu/people/preiner/files/publications/PreinerNiemetzBiere-TACAS17.pdf).
-In Proceedings of the 23rd International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS'17),
+In Proceedings of the 23<sup>rd</sup> International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS'17),
 [Lecture Notes in Computer Science](http://www.springer.de/comp/lncs),
 volume 10205, 
 pages 264-280,
@@ -60,7 +60,7 @@ Springer, 2017.
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Precise and Complete Propagation Based Local Search for Satisfiability Modulo Theories](https://cs.stanford.edu/people/niemetz/files/publications/2016/NiemetzPreinerBiere-CAV16.pdf).
-In Proceedings of the 28th International Conference on Computer Aided Verification (CAV'16),
+In Proceedings of the 28<sup>th</sup> International Conference on Computer Aided Verification (CAV'16),
 Part I,
 [Lecture Notes in Computer Science](http://www.springer.de/comp/lncs),
 volume 9779, 
@@ -85,7 +85,7 @@ Altenbergerstr.&nbsp;69, 4040 Linz, Austria.
 
 Mathias Preiner, Aina Niemetz, Armin Biere.
 [Better Lemmas with Lambda Extraction](https://cs.stanford.edu/people/preiner/files/publications/PreinerNiemetzBiere-FMCAD15.pdf).
-In Proceedings of the 15th
+In Proceedings of the 15<sup>th</sup>
 International Conference on Formal Methods in Computer Aided Design (FMCAD'15),
 pages 128-135,
 FMCAD Inc.&nbsp;2015.
@@ -95,7 +95,7 @@ FMCAD Inc.&nbsp;2015.
 
 Aina Niemetz, Mathias Preiner, Armin Biere, Andreas Fr&ouml;hlich.
 [Improving Local Search For Bit-Vector Logics in SMT with Path Propagation](https://cs.stanford.edu/people/niemetz/files/publications/2015/NiemetzPreinerFroehlichBiere-DIFTS15.pdf).
-In Proceedings of the 4th International Workshop on Design and Implementation of Formal Tools and Systems (DIFTS'15),
+In Proceedings of the 4<sup>th</sup> International Workshop on Design and Implementation of Formal Tools and Systems (DIFTS'15),
 10 pages, aff.&nbsp;to FMCAD'15, Austin, TX, USA, 2015.
 <br/>
 `[`[PDF](https://cs.stanford.edu/people/niemetz/files/publications/2015/NiemetzPreinerFroehlichBiere-DIFTS15.pdf)`]`
@@ -123,7 +123,7 @@ volume 9, 2015, pages 53-58.
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Turbo-Charging Lemmas on Demand with Don't Care Reasoning](https://cs.stanford.edu/people/niemetz/files/publications/2014/NiemetzPreinerBiere-FMCAD14.pdf).
-In Proceedings of the 14th
+In Proceedings of the 14<sup>th</sup>
 International Conference on Formal Methods in Computer Aided Design (FMCAD'14),
 pages 179-186,
 FMCAD Inc, 2014.
@@ -173,7 +173,7 @@ Robert Brummayer.
 
 Robert Brummayer, Armin Biere.
 [Boolector: An Efficient SMT Solver for Bit-Vectors and Arrays](http://fmv.jku.at/papers/BrummayerBiere-TACAS09.pdf).
-In Proceedings of the 15th International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS'09),
+In Proceedings of the 15<sup>th</sup> International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS'09),
 [Lecture Notes in Computer Science](http://www.springer.de/comp/lncs),
 volume 5505,
 Springer, 2009.
