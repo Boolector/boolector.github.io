@@ -22,15 +22,15 @@ In Proceedings of the 15<sup>th</sup> International Workshop on Satisfiability M
 
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
-[Boolector at the SMT competition 2017](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2017.pdf).
+[Boolector at the SMT competition 2017](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2017.pdf).
 Technical Report <b>17/1</b>, June 2017,
-[FMV Reports Series](http://fmv.jku.at/trs">FMV Reports Series),
-[Institute for Formal Models and Verification](http://fmv.jku.at), 
-[Johannes Kepler University](http://www.jku.at),
+FMV Reports Series,
+Institute for Formal Models and Verification,
+Johannes Kepler University,
 Altenbergerstr.&nbsp;69, 4040 Linz, Austria.
 <br/>
-`[`[PDF](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2017.pdf)`]`
-`[`[BibTex](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2017.bib)`]`
+`[`[PDF](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2017.pdf)`]`
+`[`[BibTex](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2017.bib)`]`
 
 Aina Niemetz.
 [Bit Precise Reasoning Beyond Bit-Blasting](https://cs.stanford.edu/people/niemetz/files/publications/2017/Niemetz-PhD-Thesis-2017.pdf).
@@ -67,21 +67,21 @@ volume 9779,
 pages 199-217,
 Springer 2016.
 <br/>
-`[`[PDF](https://cs.stanford.edu/people/niemetz/files/publications/2016/NiemetzPreinerBiere-CAV16.pdf)`]` 
+`[`[PDF](https://cs.stanford.edu/people/niemetz/files/publications/2016/NiemetzPreinerBiere-CAV16.pdf)`]`
 `[`[BibTex](https://cs.stanford.edu/people/niemetz/files/bibtex/2016/NiemetzPreinerBiere-CAV16.bib)`]`
 `[`[DOI](http://dx.doi.org/10.1007/978-3-319-41528-4_11)`]`
 `[`[Artifact](http://fmv.jku.at/cav16)`]`
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
-[Boolector at the SMT competition 2016](htpp://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2016.pdf).
+[Boolector at the SMT competition 2016](system-description/NiemetzPreinerBiere-SMT-Competition-2016.pdf).
 Technical Report <b>16/1</b>, June 2016,
-[FMV Reports Series](http://fmv.jku.at/trs">FMV Reports Series),
-[Institute for Formal Models and Verification](http://fmv.jku.at), 
-[Johannes Kepler University](http://www.jku.at),
+FMV Reports Series,
+Institute for Formal Models and Verification,
+Johannes Kepler University,
 Altenbergerstr.&nbsp;69, 4040 Linz, Austria.
 <br/>
-`[`[PDF](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2016.pdf)`]`
-`[`[BibTex](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2016.bib)`]`
+`[`[PDF](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2016.pdf)`]`
+`[`[BibTex](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2016.bib)`]`
 
 Mathias Preiner, Aina Niemetz, Armin Biere.
 [Better Lemmas with Lambda Extraction](https://cs.stanford.edu/people/preiner/files/publications/PreinerNiemetzBiere-FMCAD15.pdf).
@@ -103,15 +103,15 @@ In Proceedings of the 4<sup>th</sup> International Workshop on Design and Implem
 `[`[Artifact](http://fmv.jku.at/difts15-prop)`]`
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
-[Boolector at the SMT competition 2015](http://fmv.jku.at/difts15-prop).
+[Boolector at the SMT competition 2015](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2015.pdf).
 Technical Report <b>15/1</b>, June 2015,
-[FMV Reports Series](http://fmv.jku.at/trs">FMV Reports Series),
-<a href="http://fmv.jku.at">Institute for Formal Models and Verification</a>, 
-<a href="http://www.jku.at">Johannes Kepler University</a>,
+FMV Reports Series,
+Institute for Formal Models and Verification,
+Johannes Kepler University,
 Altenbergerstr.&nbsp;69, 4040 Linz, Austria.
 <br/>
-`[`[PDF](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2015.pdf)`]`
-`[`[BibTex](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2015.bib)`]`
+`[`[PDF](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2015.pdf)`]`
+`[`[BibTex](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2015.bib)`]`
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Boolector 2.0](http://fmv.jku.at/papers/NiemetzPreinerBiere-JSAT15.pdf).
@@ -134,15 +134,15 @@ FMCAD Inc, 2014.
 `[`[Artifact](http://fmv.jku.at/dpjust)`]`
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
-[Boolector at the SMT competition 2014](/papers/NiemetzPreinerBiere-SMT-Competition-2014.pdf).
+[Boolector at the SMT competition 2014](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2014.pdf).
 Technical Report <b>14/1</b>, June 2014,
-[FMV Reports Series](http://fmv.jku.at/trs">FMV Reports Series),
-[Institute for Formal Models and Verification](http://fmv.jku.at), 
-[Johannes Kepler University](http://www.jku.at),
+FMV Reports Series,
+Institute for Formal Models and Verification,
+Johannes Kepler University,
 Altenbergerstr.&nbsp;69, 4040 Linz, Austria.
 <br/>
-`[`[PDF](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2014.pdf)`]`
-`[`[BibTex](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2014.bib)`]`
+`[`[PDF](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2014.pdf)`]`
+`[`[BibTex](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2014.bib)`]`
 
 Mathias Preiner, Aina Niemetz, Armin Biere.
 [Lemmas on Demand for Lambdas](https://cs.stanford.edu/people/preiner/files/publications/PreinerNiemetzBiere-DIFTS13.pdf).
@@ -154,15 +154,26 @@ In <i>Proc.&nbsp;2nd Intl.&nbsp;Work.&nbsp;on Design and Implementation of Forma
 `[`[Artifact](http://fmv.jku.at/difts-rev-13)`]`
 
 Armin Biere.
-[Boolector Entering the SMT Competition 2012](http://fmv.jku.at/papers/Biere-SMT-Competition-2012.pdf).
+[Boolector Entering the SMT Competition 2012](system-descriptions/Biere-SMT-Competition-2012.pdf).
 Technical Report <b>12/1</b>, June 2012,
-[FMV Reports Series](http://fmv.jku.at/trs">FMV Reports Series),
-[Institute for Formal Models and Verification](http://fmv.jku.at), 
-[Johannes Kepler University](http://www.jku.at),
+FMV Reports Series,
+Institute for Formal Models and Verification,
+Johannes Kepler University,
 Altenbergerstr.&nbsp;69, 4040 Linz, Austria.
 <br/>
-`[`[PDF](http://fmv.jku.at/papers/Biere-SMT-Competition-2012.pdf)`]`
-`[`[BibTex](http://fmv.jku.at/papers/Biere-SMT-Competition-2012.bib)`]`
+`[`[PDF](system-descriptions/Biere-SMT-Competition-2012.pdf)`]`
+`[`[BibTex](system-descriptions/Biere-SMT-Competition-2012.bib)`]`
+
+Armin Biere.
+[Boolector at the SMT Competition 2011](system-descriptions/Biere-SMT-Competition-2011.pdf).
+Technical Report <b>11/3</b>, June 2011,
+FMV Reports Series,
+Institute for Formal Models and Verification,
+Johannes Kepler University,
+Altenbergerstr.&nbsp;69, 4040 Linz, Austria.
+<br/>
+`[`[PDF](system-descriptions/Biere-SMT-Competition-2011.pdf)`]`
+`[`[BibTex](system-descriptions/Biere-SMT-Competition-2011.bib)`]`
 
 Robert Brummayer.
 [Efficient SMT Solving for Bit-Vectors and the Extensional Theory of Arrays](http://fmv.jku.at/papers/Brummayer-PhD-Thesis-2009.pdf).
