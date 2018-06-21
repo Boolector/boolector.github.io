@@ -31,7 +31,8 @@
           <a href="./people.html"><b>People</b></a></br>
         </p>
 
-        {% include_relative badges.md %}
+        {% capture badges %}{% include badges.md %}{% endcapture %}
+        {{ badges | markdownify }}
 
         {% if site.show_downloads %}
         <ul class="downloads">
