@@ -30,7 +30,7 @@ as part of a competition without explicit written permission.
 
 ### GNU General Public License Version 3
 
-The following versions of Boolector were made available under the GPLv3.
+The following versions of Boolector were made available under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0).
 
 - [Boolector 1.5.118](boolector-1.5.118-6b56be4-121013.tar.xz)
 - [Boolector 1.5.118 (with SAT solvers)](boolector-1.5.118-with-sat-solvers.tar.xz)
