@@ -4,6 +4,9 @@
 
 ## Documentation
 
+The documentation of Boolector's public C and Python APIs can be found
+[here](docs/index.html).
+
 ## Bibtex Entry
 
 If you cite Boolector >= version 2.0,
