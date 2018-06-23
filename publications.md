@@ -1,6 +1,15 @@
 ## Publications
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
+[Boolector at the SMT competition 2018](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2018.pdf).
+Technical Report,
+Stanford University and Johannes Kepler University Linz,
+June 2018.
+<br/>
+`[`[PDF](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2018.pdf)`]`
+`[`[BibTex](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2018.bib)`]`
+
+Aina Niemetz, Mathias Preiner, Armin Biere.
 [Propagation based local search for bit-precise reasoning](https://link.springer.com/content/pdf/10.1007%2Fs10703-017-0295-6.pdf).
 In Journal of [Formal Methods in System Design](https://link.springer.com/journal/10703),
 volume 5 (3), pages 608-636, Springer, 2017.
