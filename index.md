@@ -1,6 +1,13 @@
 ## News
 
+Boolector version 3.0.0 released.
+
+Boolector is now hosted on [GitHub](https://github.com/boolector/boolector)
+and licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
 ## Download
+
+[boolector-3.0.0](https://github.com/Boolector/boolector/releases/tag/3.0.0)
 
 ## Documentation
 
