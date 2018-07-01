@@ -1,6 +1,6 @@
 These are the sources of the prototype implementation for pBoolector,
 a parallel implementation of the SMT solver Boolector based on bit-blasting
-and look-ahead for QF_BV. 
+and look-ahead for QF_BV.
 
 This version (pboolector-0.0) was developed by Christian Reisenberger as
 a master's thesis and will not be maintained in the future.
@@ -31,4 +31,4 @@ USE IN COMPETITIONS IS RESTRICTED TOO.
 SEE 'COPYING' FOR MORE DETAILS.
 
 [1] http://fmv.jku.at/master/Reisenberger-MasterThesis-2014.pdf
-[2] http://fmv.jku.at/boolector/boolector-2.0.1-with-lingeling-azd.tar.bz2
+[2] http://boolector.github.io/solver-archive/pboolector/boolector-2.0.1-with-lingeling-azd.tar.bz2
