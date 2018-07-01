@@ -18,12 +18,13 @@ for QF_BV. This version was developed by Christian Reisenberger for his
 [master's thesis](http://fmv.jku.at/master/Reisenberger-MasterThesis-2014.pdf)
 and will <b>not be maintained</b> in the future.
 
-It is available under
-a restricted [license](solver-archive/pboolector/COPYING-pboolector) for non-commercial use.
-See the
-[README](solver-archive/pboolector/README-pboolector)
-and [COPYING](solver-archive/pboolector/COPYING-pboolector) files provided with
-the sources for more detailed information on pBoolector and its license.
+It is available under a restricted
+[license](solver-archive/pboolector/COPYING-pboolector.txt)
+for non-commercial use.
+See the [README](solver-archive/pboolector/README-pboolector.txt)
+and [COPYING](solver-archive/pboolector/COPYING-pboolector.txt)
+files provided with the sources for more detailed information on pBoolector and
+its license.
 
 Note that the pBoolector sources as provided are an extension to
 Boolector version

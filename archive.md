@@ -10,7 +10,7 @@ on GitHub.
 ### Restricted license for non-commercial use
 
 The following versions of Boolector were made available under a restricted
-[license](solver-archive/COPYING) for non-commercial use.
+[license](solver-archive/COPYING.txt) for non-commercial use.
 This license, by default, prohibits the use of these versions of Boolector
 as part of a competition without explicit written permission.
 
