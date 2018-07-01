@@ -12,10 +12,10 @@ by [Johannes Waldmann](http://www.imn.htwk-leipzig.de/%7ewaldmann)
 
 ### pBoolector
 
-The following sources represent the prototype implementation pBoolector.
-It was implemented by Christian Reisenberger for his
-[master's thesis](http://fmv.jku.at/master/Reisenberger-MasterThesis-2014.pdf)
-as an extension of
+The following sources represent the prototype implementation pBoolector
+as implemented by Christian Reisenberger for his
+[master's thesis](http://fmv.jku.at/master/Reisenberger-MasterThesis-2014.pdf).
+It is an extension of
 Boolector version
 [2.0.1](solver-archive/boolector-2.0.1-with-lingeling-azd.tar.bz2)
 and will <b>not be maintained</b> in the future.
@@ -36,10 +36,10 @@ information on how to patch Boolector version
 [2.0.1](solver-archive/boolector-2.0.1-with-lingeling-azd.tar.bz2)
 with the provided pBoolector sources.
 
-<b>Note:</b> The pBoolector sources are provided as an extension to
+<b>Note:</b> The pBoolector sources as provided are an extension to
 Boolector version
 [2.0.1](solver-archive/boolector-2.0.1-with-lingeling-azd.tar.bz2)
-and are not compatible with earlier or later releases of Boolector.
+and are <b>not compatible</b> with earlier or later releases of Boolector.
 
 
 
