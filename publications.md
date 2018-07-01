@@ -2,8 +2,12 @@
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Boolector at the SMT competition 2018](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2018.pdf).
-Technical Report,
+Technical Report 18/1,
 Stanford University and Johannes Kepler University Linz,
+FMV Reports Series,
+Institute for Formal Models and Verification,
+Johannes Kepler University,
+Altenbergerstr.&nbsp;69, 4040 Linz, Austria.
 June 2018.
 <br/>
 `[`[PDF](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2018.pdf)`]`
@@ -32,7 +36,7 @@ In Proceedings of the 15<sup>th</sup> International Workshop on Satisfiability M
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Boolector at the SMT competition 2017](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2017.pdf).
-Technical Report <b>17/1</b>, June 2017,
+Technical Report 17/1, June 2017,
 FMV Reports Series,
 Institute for Formal Models and Verification,
 Johannes Kepler University,
@@ -83,7 +87,7 @@ Springer 2016.
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Boolector at the SMT competition 2016](system-description/NiemetzPreinerBiere-SMT-Competition-2016.pdf).
-Technical Report <b>16/1</b>, June 2016,
+Technical Report 16/1, June 2016,
 FMV Reports Series,
 Institute for Formal Models and Verification,
 Johannes Kepler University,
@@ -113,7 +117,7 @@ In Proceedings of the 4<sup>th</sup> International Workshop on Design and Implem
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Boolector at the SMT competition 2015](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2015.pdf).
-Technical Report <b>15/1</b>, June 2015,
+Technical Report 15/1, June 2015,
 FMV Reports Series,
 Institute for Formal Models and Verification,
 Johannes Kepler University,
@@ -144,7 +148,7 @@ FMCAD Inc, 2014.
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Boolector at the SMT competition 2014](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2014.pdf).
-Technical Report <b>14/1</b>, June 2014,
+Technical Report 14/1, June 2014,
 FMV Reports Series,
 Institute for Formal Models and Verification,
 Johannes Kepler University,
@@ -164,7 +168,7 @@ In <i>Proc.&nbsp;2nd Intl.&nbsp;Work.&nbsp;on Design and Implementation of Forma
 
 Armin Biere.
 [Boolector Entering the SMT Competition 2012](system-descriptions/Biere-SMT-Competition-2012.pdf).
-Technical Report <b>12/1</b>, June 2012,
+Technical Report 12/1, June 2012,
 FMV Reports Series,
 Institute for Formal Models and Verification,
 Johannes Kepler University,
@@ -175,7 +179,7 @@ Altenbergerstr.&nbsp;69, 4040 Linz, Austria.
 
 Armin Biere.
 [Boolector at the SMT Competition 2011](system-descriptions/Biere-SMT-Competition-2011.pdf).
-Technical Report <b>11/3</b>, June 2011,
+Technical Report 11/3, June 2011,
 FMV Reports Series,
 Institute for Formal Models and Verification,
 Johannes Kepler University,
