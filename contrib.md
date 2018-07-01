@@ -15,7 +15,7 @@ by [Johannes Waldmann](http://www.imn.htwk-leipzig.de/%7ewaldmann)
 The following sources represent the prototype implementation pBoolector
 as implemented by Christian Reisenberger for his
 [master's thesis](http://fmv.jku.at/master/Reisenberger-MasterThesis-2014.pdf).
-It is an extension of
+pBoolector is an extension of
 Boolector version
 [2.0.1](solver-archive/boolector-2.0.1-with-lingeling-azd.tar.bz2)
 and will <b>not be maintained</b> in the future.
