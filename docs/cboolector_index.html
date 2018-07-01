@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>C Interface &#8212; Boolector 3.0.0-pre documentation</title>
+    <title>C Interface &#8212; Boolector 3.0.0 documentation</title>
     <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
@@ -30,7 +30,7 @@
         <li class="right" >
           <a href="cboolector.html" title="Boolector C API documentation"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.0.0-pre documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.0.0 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="cboolector.html" accesskey="U">Boolector C API documentation</a> &#187;</li> 
       </ul>
     </div>
@@ -2862,18 +2862,16 @@ void <code class="descname">boolector_reset_time</code><span class="sig-paren">(
 <dt id="c.boolector_rol">
 BoolectorNode *<code class="descname">boolector_rol</code><span class="sig-paren">(</span>Btor<em>&nbsp;*btor</em>, BoolectorNode<em>&nbsp;*n0</em>, BoolectorNode<em>&nbsp;*n1</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_rol" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a rotate left.</p>
-<p>Given bit vector node <code class="docutils literal notranslate"><span class="pre">n1</span></code>, the value it represents is the number of bits
-by which node <code class="docutils literal notranslate"><span class="pre">n0</span></code> is rotated to the left.</p>
+<p>The bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code> must be a power of two (greater than 1) and the
+bit width of <code class="docutils literal notranslate"><span class="pre">n1</span></code> must be log2 of the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>btor</strong> – Boolector instance.</li>
-<li><strong>n0</strong> – First bit vector operand where the bit width is a power of two and
-greater than 1.</li>
-<li><strong>n1</strong> – Second bit vector operand with bit width log2 of the bit width of
-<code class="docutils literal notranslate"><span class="pre">n0</span></code>.</li>
+<li><strong>n0</strong> – First bit vector operand.</li>
+<li><strong>n1</strong> – Second bit vector operand.</li>
 </ul>
 </td>
 </tr>
@@ -2888,18 +2886,16 @@ greater than 1.</li>
 <dt id="c.boolector_ror">
 BoolectorNode *<code class="descname">boolector_ror</code><span class="sig-paren">(</span>Btor<em>&nbsp;*btor</em>, BoolectorNode<em>&nbsp;*n0</em>, BoolectorNode<em>&nbsp;*n1</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_ror" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a rotate right.</p>
-<p>Given bit vector node <code class="docutils literal notranslate"><span class="pre">n1</span></code>, the value it represents is the number of bits by
-which node <code class="docutils literal notranslate"><span class="pre">n0</span></code> is rotated to the right.</p>
+<p>The bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code> must be a power of two (greater than 1) and the
+bit width of <code class="docutils literal notranslate"><span class="pre">n1</span></code> must be log2 of the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>btor</strong> – Boolector instance.</li>
-<li><strong>n0</strong> – First bit vector operand where the bit width is a power of two and
-greater than 1.</li>
-<li><strong>n1</strong> – Second bit vector operand with bit width log2 of the bit width of
-<code class="docutils literal notranslate"><span class="pre">n0</span></code>.</li>
+<li><strong>n0</strong> – First bit vector operand.</li>
+<li><strong>n1</strong> – Second bit vector operand.</li>
 </ul>
 </td>
 </tr>
@@ -3728,18 +3724,17 @@ less than or equal to <code class="docutils literal notranslate"><span class="pr
 <dt id="c.boolector_sll">
 BoolectorNode *<code class="descname">boolector_sll</code><span class="sig-paren">(</span>Btor<em>&nbsp;*btor</em>, BoolectorNode<em>&nbsp;*n0</em>, BoolectorNode<em>&nbsp;*n1</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_sll" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a logical shift left.</p>
-<p>Given node <code class="docutils literal notranslate"><span class="pre">n1</span></code>, the value it represents is the number of zeroes shifted
-into node <code class="docutils literal notranslate"><span class="pre">n0</span></code> from the right.</p>
+<p>The parameters <code class="docutils literal notranslate"><span class="pre">n0</span></code> and <code class="docutils literal notranslate"><span class="pre">n1</span></code> must either have the same bit width or
+the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code> must be a power of two (greater than 1) and the
+bit width of <code class="docutils literal notranslate"><span class="pre">n1</span></code> must be log2 of the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>btor</strong> – Boolector instance.</li>
-<li><strong>n0</strong> – First bit vector operand where the bit width is a power of two and
-greater than 1.</li>
-<li><strong>n1</strong> – Second bit vector operand with bit width log2 of the bit width of
-<code class="docutils literal notranslate"><span class="pre">n0</span></code>.</li>
+<li><strong>n0</strong> – First bit vector operand.</li>
+<li><strong>n1</strong> – Second bit vector operand.</li>
 </ul>
 </td>
 </tr>
@@ -3852,19 +3847,17 @@ signed.</p>
 <dt id="c.boolector_sra">
 BoolectorNode *<code class="descname">boolector_sra</code><span class="sig-paren">(</span>Btor<em>&nbsp;*btor</em>, BoolectorNode<em>&nbsp;*n0</em>, BoolectorNode<em>&nbsp;*n1</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_sra" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an arithmetic shift right.</p>
-<p>Analogously to <a class="reference internal" href="#c.boolector_srl" title="boolector_srl"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_srl()</span></code></a>, but
-whether zeroes or ones are shifted in depends on the most significant bit
-of <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
+<p>The parameters <code class="docutils literal notranslate"><span class="pre">n0</span></code> and <code class="docutils literal notranslate"><span class="pre">n1</span></code> must either have the same bit width or
+the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code> must be a power of two (greater than 1) and the
+bit width of <code class="docutils literal notranslate"><span class="pre">n1</span></code> must be log2 of the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>btor</strong> – Boolector instance.</li>
-<li><strong>n0</strong> – First bit vector operand where the bit width is a power of two and
-greater than 1.</li>
-<li><strong>n1</strong> – Second bit vector operand with bit width log2 of the bit width of
-<code class="docutils literal notranslate"><span class="pre">n0</span></code>.</li>
+<li><strong>n0</strong> – First bit vector operand.</li>
+<li><strong>n1</strong> – Second bit vector operand.</li>
 </ul>
 </td>
 </tr>
@@ -3910,22 +3903,21 @@ sign bit is 1.  Hence, in case that <code class="docutils literal notranslate"><
 <dt id="c.boolector_srl">
 BoolectorNode *<code class="descname">boolector_srl</code><span class="sig-paren">(</span>Btor<em>&nbsp;*btor</em>, BoolectorNode<em>&nbsp;*n0</em>, BoolectorNode<em>&nbsp;*n1</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_srl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a logical shift right.</p>
-<p>Given node <code class="docutils literal notranslate"><span class="pre">n1</span></code>, the value it represents is the number of zeroes shifted
-into node <code class="docutils literal notranslate"><span class="pre">n0</span></code> from the left.</p>
+<p>The parameters <code class="docutils literal notranslate"><span class="pre">n0</span></code> and <code class="docutils literal notranslate"><span class="pre">n1</span></code> must either have the same bit width or
+the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code> must be a power of two (greater than 1) and the
+bit width of <code class="docutils literal notranslate"><span class="pre">n1</span></code> must be log2 of the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>btor</strong> – Boolector instance.</li>
-<li><strong>n0</strong> – First bit vector operand where the bit width is a power of two and
-greater than 1.</li>
-<li><strong>n1</strong> – Second bit vector operand with bit width log2 of the bit width of
-<code class="docutils literal notranslate"><span class="pre">n0</span></code>.</li>
+<li><strong>n0</strong> – First bit vector operand.</li>
+<li><strong>n1</strong> – Second bit vector operand.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Bit vector with the same bit width as <code class="docutils literal notranslate"><span class="pre">n0</span></code> and <code class="docutils literal notranslate"><span class="pre">n1</span></code>.</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Bit vector with the same bit width as <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -4553,12 +4545,12 @@ BoolectorNode *<code class="descname">boolector_zero</code><span class="sig-pare
         <li class="right" >
           <a href="cboolector.html" title="Boolector C API documentation"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.0.0-pre documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.0.0 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="cboolector.html" >Boolector C API documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2007-2018 The authors of Boolector..
+        &#169; Copyright 2007-2018 The authors of Boolector.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.5.
     </div>
   </body>
