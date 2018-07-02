@@ -6,7 +6,7 @@
 - [Aina Niemetz](http://cs.stanford.edu/people/niemetz) (since 2012)
 - [Mathias Preiner](http://cs.stanford.edu/people/preiner) (since 2012)
 
-### Former members
+### Former Members
 
 - [Robert Brummayer](http://fmv.jku.at/brummayer) (2007-2009)
 
