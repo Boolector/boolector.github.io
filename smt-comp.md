@@ -1,6 +1,22 @@
 ## SMT competitions
 
 <h3>
+  <a href="http://smtcomp.sourceforge.net/2018/" target="_blank">
+    SMT Competition 2018
+  </a>
+</h3>
+  - **Competing Version:** Boolector 3.0
+<!--  - **System Description**:
+      [Boolector at the SMT Competition 2018](http://fmv.jku.at/papers/NiemetzPreinerBiere-SMT-Competition-2018.pdf) -->
+  - **Divisions Entered:**
+    - *Main Track:*&nbsp; BV, QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
+    - *Application Track:*&nbsp; QF_BV, QF_ABV, QF_UFBV
+  - **Awards:**
+    - **1<sup>st</sup>** Place in QF_ABV (Main Track, Application Track)
+    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+    - **1<sup>st</sup>** Place in QF_UFBV (Main Track, Application Track)
+
+<h3>
   <a href="http://smtcomp.sourceforge.net/2017/" target="_blank">
     SMT Competition 2017
   </a>
