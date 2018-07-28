@@ -1,5 +1,19 @@
 ## Publications
 
+Aina Niemetz, Mathias Preiner, Clifford Wolf, Armin Biere.
+[BTOR2, BtorMC and Boolector 3.0](https://link.springer.com/chapter/10.1007/978-3-319-96145-3_32).
+In Proceedings of the 30<sup>th</sup> International Conference on Computer Aided Verification (CAV'18),
+Part I,
+[Lecture Notes in Computer Science](http://www.springer.de/comp/lncs),
+volume 10981,
+pages 587-595,
+Springer, 2018.
+<br/>
+`[`[PDF](https://link.springer.com/content/pdf/10.1007%2F978-3-319-96145-3_32.pdf)`]`
+`[`[BibTex](papers/NiemetzPreinerWolfBiere-CAV18.bib)`]`
+`[`[DOI](http://dx.doi.org/10.1007/978-3-319-96145-3_32)`]`
+
+
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Boolector at the SMT competition 2018](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2018.pdf).
 Technical Report 18/1,
