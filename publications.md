@@ -1,5 +1,15 @@
 ## Publications
 
+Aina Niemetz, Mathias Preiner, Armin Biere.
+[Boolector at the SMT competition 2019](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2019.pdf).
+In Proceedings of the 17th International Workshop on Satisfiability Modulo
+Theories (SMT 2019), affiliated with the 22nd International Conference on
+Theory and Applications of Satisfiability Testing (SAT 2019), Lisbon, Portugal,
+July 7-8, 2019.
+<br/>
+`[`[PDF](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2019.pdf)`]`
+`[`[BibTex](system-descriptions/NiemetzPreinerBiere-SMT-Competition-2019.bib)`]`
+
 Aina Niemetz, Mathias Preiner, Clifford Wolf, Armin Biere.
 [BTOR2, BtorMC and Boolector 3.0](https://link.springer.com/chapter/10.1007/978-3-319-96145-3_32).
 In Proceedings of the 30<sup>th</sup> International Conference on Computer Aided Verification (CAV'18),
