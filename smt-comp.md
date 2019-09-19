@@ -45,9 +45,13 @@
     - *Main Track:*&nbsp; BV, QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
     - *Application Track:*&nbsp; QF_BV, QF_ABV, QF_UFBV
   - **Awards:**
-    - **1<sup>st</sup>** Place in QF_ABV (Main Track, Application Track)
-    - **1<sup>st</sup>** Place in QF_BV (Main Track)
-    - **1<sup>st</sup>** Place in QF_UFBV (Main Track, Application Track)
+    - Main Track:
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/results-QF_ABV.html)
+      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2018/results/results-QF_BV.html)
+      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/results-QF_UFBV.html)
+    - Application Track:
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/results-QF_ABV-app.html)
+      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/results-QF_BV-app.html)
     - One [Medal](img/flog18.jpg) in the [FLoC'18 Olympic Games](https://www.floc2018.org/floc-olympic-games/)
 
 <h3>
@@ -61,9 +65,9 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; BV, QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
   - **Awards:**
-    - **1<sup>st</sup>** Place in QF_ABV (Main Track)
-    - **1<sup>st</sup>** Place in QF_BV (Main Track)
-    - **1<sup>st</sup>** Place in QF_UFBV (Main Track)
+    - **1<sup>st</sup>** place in QF_ABV (Main Track)
+    - **1<sup>st</sup>** place in QF_BV (Main Track)
+    - **1<sup>st</sup>** place in QF_UFBV (Main Track)
 
 
 <h3>
@@ -77,9 +81,9 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; BV, UFBV, QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
   - **Awards:**
-    - **1<sup>st</sup>** Place in QF_ABV (Main Track)
-    - **1<sup>st</sup>** Place in QF_BV (Main Track)
-    - **1<sup>st</sup>** Place in QF_UFBV (Main Track)
+    - **1<sup>st</sup>** place in QF_ABV (Main Track)
+    - **1<sup>st</sup>** place in QF_BV (Main Track)
+    - **1<sup>st</sup>** place in QF_UFBV (Main Track)
 
 <h3>
   <a href="http://smtcomp.sourceforge.net/2015/" target="_blank">
@@ -93,9 +97,9 @@
     - *Main Track:*&nbsp; QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
     - *Application Track:*&nbsp; QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** Place in QF_ABV (Main Track)
-    - **1<sup>st</sup>** Place in QF_BV (Main Track)
-    - **1<sup>st</sup>** Place in QF_UFBV (Main Track)
+    - **1<sup>st</sup>** place in QF_ABV (Main Track)
+    - **1<sup>st</sup>** place in QF_BV (Main Track)
+    - **1<sup>st</sup>** place in QF_UFBV (Main Track)
 
 <h3>
   <a href="http://smtcomp.sourceforge.net/2014/" target="_blank">
@@ -108,9 +112,13 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_ABV, QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** Place in QF_ABV (Main Track)
-    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+    - **1<sup>st</sup>** place in QF_ABV (Main Track)
+    - **1<sup>st</sup>** place in QF_BV (Main Track)
     - One [G&ouml;del Medal](img/goedel.jpg) in the [FLoC'14 Olympic Games](http://vsl2014.at/olympics/)
+
+<h3>
+    No SMT Competition in 2013
+</h3>
 
 <h3>
   <a href="http://smtcomp.sourceforge.net/2012/" target="_blank">
@@ -123,8 +131,8 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
-    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+    - **1<sup>st</sup>** place in QF_AUFBV (Main Track)
+    - **1<sup>st</sup>** place in QF_BV (Main Track)
 
 <h3>
   <a href="http://smtcomp.sourceforge.net/2011/" target="_blank">
@@ -135,7 +143,7 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
+    - **1<sup>st</sup>** place in QF_AUFBV (Main Track)
 
 <h3>
   <a href="http://smtcomp.sourceforge.net/2010/" target="_blank">
@@ -154,7 +162,7 @@ no participation
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
+    - **1<sup>st</sup>** place in QF_AUFBV (Main Track)
 
 <h3>
   <a href="http://smtcomp.sourceforge.net/2008/" target="_blank">
@@ -165,7 +173,7 @@ no participation
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV 
   - **Awards:**
-    - **1<sup>st</sup>** Place in QF_AUFBV (Main Track)
-    - **1<sup>st</sup>** Place in QF_BV (Main Track)
+    - **1<sup>st</sup>** place in QF_AUFBV (Main Track)
+    - **1<sup>st</sup>** place in QF_BV (Main Track)
 
 
