@@ -1,11 +1,25 @@
 ## News
 
-- Boolector won *first* place in divisions *QF_ABV* (main and application
-  track), *QF_BV* (main track) and *QF_UFBV* (main and application track) in
-  the [SMT competition 2018](http://smtcomp.sourceforge.net/2018/).
-  Boolector won [one medal](img/flog18.jpg) in the
+- In the [SMT competition 2019](http://www.smt-comp.org/2019/),
+  Boolector **won** in divisions
+  *QF_ABV* (Single Query and Challenge track),
+  *QF_BV* (Single Query, Challenge and Model Validation track) and
+  *QF_AUFBV* (Challenge track).
+  Boolector further won [3 silver trophies](img/smtcomp19.jpg)
+	for 2<sup>nd</sup> place in
+  *Biggest Lead* in the Challenge track, and
+  *Largest Contribution* in the Challenge and Incremental track.
+
+- In the [SMT competition 2018](http://www.smt-comp.org/2018/),
+  Boolector **won** in divisions
+  *QF_ABV* (Main and Application track),
+  *QF_BV* (Main track) and
+  *QF_UFBV* (Main and Application track).
+  Boolector further won [one medal](img/flog18.jpg) in the
   [FLOC olympic games 2018](https://www.floc2018.org/floc-olympic-games/).
+
 - Boolector version 3.0.0 released.
+
 - Boolector is now hosted on [GitHub](https://github.com/boolector/boolector)
   and licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
