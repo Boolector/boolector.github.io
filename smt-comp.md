@@ -55,7 +55,7 @@
     - One [Medal](img/flog18.jpg) in the [FLoC'18 Olympic Games](https://www.floc2018.org/floc-olympic-games/)
 
 <h3>
-  <a href="http://smtcomp.sourceforge.net/2017/" target="_blank">
+  <a href="http://www.smt-comp.org/2017/" target="_blank">
     SMT Competition 2017
   </a>
 </h3>
