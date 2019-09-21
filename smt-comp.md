@@ -46,12 +46,12 @@
     - *Application Track:*&nbsp; QF_BV, QF_ABV, QF_UFBV
   - **Awards:**
     - Main Track:
-      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/results-QF_ABV.html)
-      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2018/results/results-QF_BV.html)
-      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/results-QF_UFBV.html)
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/QF_ABV.html)
+      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2018/results/QF_BV.html)
+      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/QF_UFBV.html)
     - Application Track:
-      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/results-QF_ABV-app.html)
-      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/results-QF_BV-app.html)
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/QF_ABV-app.html)
+      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/QF_BV-app.html)
     - One [Medal](img/flog18.jpg) in the [FLoC'18 Olympic Games](https://www.floc2018.org/floc-olympic-games/)
 
 <h3>
@@ -65,9 +65,9 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; BV, QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
   - **Awards:**
-    - **1<sup>st</sup>** place in QF_ABV (Main Track)
-    - **1<sup>st</sup>** place in QF_BV (Main Track)
-    - **1<sup>st</sup>** place in QF_UFBV (Main Track)
+    - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2017/results/QF_ABV.html) (Main Track)
+    - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2017/results/QF_BV.html) (Main Track)
+    - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2017/results/QF_UFBV.html) (Main Track)
 
 
 <h3>
