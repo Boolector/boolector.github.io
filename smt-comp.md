@@ -33,6 +33,11 @@
        - **2<sup>nd</sup>** place (silver) in the [Incremental Track](https://smt-comp.github.io/2019/results/largest-contribution-incremental)
        - **2<sup>nd</sup>** place (silver) in the [Challenge Track](https://smt-comp.github.io/2019/results/largest-contribution-challenge-incremental)
        - **1<sup>st</sup>** place in the [Model Validation Track](https://smt-comp.github.io/2019/results/largest-contribution-model-validation)
+
+    - [3 silver trophies](img/smtcomp19.jpg) for
+      *Biggest Lead* in the Challenge track, and
+      *Largest Contribution* in the Challenge and Incremental track
+
 <h3>
   <a href="http://www.smt-comp.org/2018/" target="_blank">
     SMT Competition 2018
