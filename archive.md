@@ -1,7 +1,10 @@
 ## Download Archive
 
 Boolector is hosted on [GitHub](https://github.com/boolector/boolector)
-and licensed under the <a class="hl" href="https://opensource.org/licenses/MIT">MIT license</a>.
+and licensed under the <a class="hl" href="https://opensource.org/licenses/MIT">MIT license</a>.  
+**All recent releases are available [here](https://github.com/Boolector/boolector/releases).**
+
+
 Previous releases of Boolector where made available under different licenses
 (see below).
 This page serves as an archive of previous releases that are not available

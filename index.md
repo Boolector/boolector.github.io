@@ -1,5 +1,8 @@
 ## News
 
+- Boolector version [3.1.0](
+    https://github.com/Boolector/boolector/releases/tag/3.1.0) released.
+
 - In the [SMT competition 2019](http://www.smt-comp.org/2019/),
   Boolector **won** in divisions
   *QF_ABV* (Single Query and Challenge track),
@@ -18,14 +21,15 @@
   Boolector further won [one medal](img/flog18.jpg) in the
   [FLOC olympic games 2018](https://www.floc2018.org/floc-olympic-games/).
 
-- Boolector version 3.0.0 released.
+- Boolector version [3.0.0](
+    https://github.com/Boolector/boolector/releases/tag/3.0.0) released.
 
 - Boolector is now hosted on [GitHub](https://github.com/boolector/boolector)
   and licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Download
 
-[boolector-3.0.0](https://github.com/Boolector/boolector/releases/tag/3.0.0)
+[boolector-3.1.0](https://github.com/Boolector/boolector/releases/tag/3.1.0)
 
 ## Documentation
 
