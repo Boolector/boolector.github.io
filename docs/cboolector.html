@@ -1,18 +1,17 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Boolector C API documentation &#8212; Boolector 3.0.0 documentation</title>
-    <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
-    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
-    <script type="text/javascript" src="static/jquery.js"></script>
-    <script type="text/javascript" src="static/underscore.js"></script>
-    <script type="text/javascript" src="static/doctools.js"></script>
+    <meta charset="utf-8" />
+    <title>Boolector C API documentation &#8212; Boolector 3.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="C Interface" href="cboolector_index.html" />
@@ -30,12 +29,12 @@
         <li class="right" >
           <a href="index.html" title="Welcome to Boolector’s API documentation!"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.0.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.1.0 documentation</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
+  <h3><a href="index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Boolector C API documentation</a><ul>
 <li><a class="reference internal" href="#interface">Interface</a></li>
@@ -65,13 +64,11 @@
   <p class="topless"><a href="cboolector_index.html"
                         title="next chapter">C Interface</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -313,7 +310,7 @@ follows:</p>
 <div class="section" id="internals">
 <span id="c-internals"></span><h2>Internals<a class="headerlink" href="#internals" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>Boolector internally maintains a directed acyclic graph (DAG) of
+<div><p>Boolector internally maintains a directed acyclic graph (DAG) of
 expressions. As a consequence, each expression maintains a reference
 counter, which is initially set to 1.
 Each time an expression is shared, i.e. for each API call that returns
@@ -329,23 +326,25 @@ Note that by asserting an expression, it will be permanently added to the
 formula, i.e. Boolector internally holds its reference until it is either
 eliminated via rewriting, or the Boolector instance is deleted.
 Following from that, it is safe to release an expression as soon as you
-asserted it, as long as you don’t need it for further querying.</div></blockquote>
+asserted it, as long as you don’t need it for further querying.</p>
+</div></blockquote>
 <div class="section" id="operators">
 <h3>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div>Boolector internally describes expressions by means of a set of base
+<div><p>Boolector internally describes expressions by means of a set of base
 operators as documented in <a class="reference external" href="http://fmv.jku.at/papers/BrummayerBiereLonsing-BPR08.pdf">BTOR</a>.
 Boolector’s API, however, provides a richer set of operators for
 convenience, where non-base operators are internally rewritten to use
 base operators only.
 E.g., two’s complement (<a class="reference internal" href="cboolector_index.html#c.boolector_neg" title="boolector_neg"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_neg()</span></code></a>) is rewritten as one’s
 complement and addition of 1.
-Note that this behaviour is not influenced by the rewrite level chosen.</div></blockquote>
+Note that this behaviour is not influenced by the rewrite level chosen.</p>
+</div></blockquote>
 </div>
 <div class="section" id="rewriting">
 <h3>Rewriting<a class="headerlink" href="#rewriting" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div>Boolector simplifies expressions and the expression DAG by means of
+<div><p>Boolector simplifies expressions and the expression DAG by means of
 rewriting and supports three so-called rewrite levels.
 Increasing rewrite levels increase the extent of rewriting performed,
 and a rewrite level of 0 is equivalent to disabling rewriting at all.
@@ -354,7 +353,8 @@ of the expression DAG—for each call to <a class="reference internal" href="cbo
 various simplification techniques and rewriting phases are initiated.
 You can force Boolector to initiate rewriting and simplify the expression
 DAG via <a class="reference internal" href="cboolector_index.html#c.boolector_simplify" title="boolector_simplify"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_simplify()</span></code></a>.
-The rewrite level can be configured via <a class="reference internal" href="cboolector_index.html#c.boolector_set_opt" title="boolector_set_opt"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_set_opt()</span></code></a>.</div></blockquote>
+The rewrite level can be configured via <a class="reference internal" href="cboolector_index.html#c.boolector_set_opt" title="boolector_set_opt"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_set_opt()</span></code></a>.</p>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="examples">
@@ -848,12 +848,12 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
         <li class="right" >
           <a href="index.html" title="Welcome to Boolector’s API documentation!"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.0.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.1.0 documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2007-2018 The authors of Boolector.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.5.
+        &#169; Copyright 2007-2019 The authors of Boolector.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
     </div>
   </body>
 </html>

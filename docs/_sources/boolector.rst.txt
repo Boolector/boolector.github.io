@@ -1,9 +1,9 @@
 :orphan:
 
-Module Index: boolector
-=======================
+Module Index: pyboolector
+=========================
 
-.. automodule:: boolector
+.. automodule:: pyboolector
    :members:
    :show-inheritance:
 
