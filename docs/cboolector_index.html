@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>C Interface &#8212; Boolector 3.1.0 documentation</title>
+    <title>C Interface &#8212; Boolector 3.2.0 documentation</title>
     <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
@@ -29,7 +29,7 @@
         <li class="right" >
           <a href="cboolector.html" title="Boolector C API documentation"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="cboolector.html" accesskey="U">Boolector C API documentation</a> &#187;</li> 
       </ul>
     </div>
@@ -234,17 +234,24 @@ size of <code class="docutils literal notranslate"><span class="pre">indices</sp
 simply inspects the set of reads rho, which is associated with each array
 expression. See our publication <a class="reference external" href="http://fmv.jku.at/papers/PreinerNiemetzBiere-DIFTS13.pdf">Lemmas on Demand for Lambdas</a> for details. At
 indices that do not occur in the model, it is assumed that the array stores a
-globally unique default value, for example 0.  The bit-vector assignments to
-the indices and values have to be freed by <a class="reference internal" href="#c.boolector_free_bv_assignment" title="boolector_free_bv_assignment"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_free_bv_assignment()</span></code></a>.
-Furthermore, the user has to free the array of indices and the array of
-values, respectively of size <code class="docutils literal notranslate"><span class="pre">size</span></code>.</p>
+globally unique default value, for example 0. If the model of a constant array
+is queried the default value of the constant array is indicated via index ‘*’.
+The bit-vector assignments to the indices and values have to be freed by
+<a class="reference internal" href="#c.boolector_free_bv_assignment" title="boolector_free_bv_assignment"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_free_bv_assignment()</span></code></a>. Furthermore, the user has to free the array of
+indices and the array of values, respectively of size <code class="docutils literal notranslate"><span class="pre">size</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>btor</strong> – Boolector instance.</p></li>
 <li><p><strong>n_array</strong> – Array operand for which the array model should be built.</p></li>
-<li><p><strong>indices</strong> – Pointer to array of index strings.</p></li>
-<li><p><strong>values</strong> – Pointer to array of value strings.</p></li>
+<li><p><strong>indices</strong> – Pointer to array of index strings. The string representation
+will use binary, decimal or hexadecimal number format,
+depending on the configuration of option
+<code class="docutils literal notranslate"><span class="pre">BTOR_OPT_OUTPUT_NUMBER_FORMAT</span></code> (binary by default).</p></li>
+<li><p><strong>values</strong> – Pointer to array of value strings. The string representation
+will use binary, decimal or hexadecimal number format,
+depending on the configuration of option
+<code class="docutils literal notranslate"><span class="pre">BTOR_OPT_OUTPUT_NUMBER_FORMAT</span></code> (binary by default).</p></li>
 <li><p><strong>size</strong> – Pointer to size.</p></li>
 </ul>
 </dd>
@@ -391,9 +398,9 @@ be freed by <a class="reference internal" href="#c.boolector_free_bv_assignment"
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>String representing a satisfying assignment to bit-vector variables
 and a consistent assignment for arbitrary bit-vector expressions.
-Each character of the string can be <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">1</span></code> or <code class="docutils literal notranslate"><span class="pre">x</span></code>. The
-latter represents that the corresponding bit can be assigned
-arbitrarily.</p>
+The string representation will use binary, decimal or hexadecimal
+number format, depending on the configuration of option
+<code class="docutils literal notranslate"><span class="pre">BTOR_OPT_OUTPUT_NUMBER_FORMAT</span></code> (binary by default).</p>
 </dd>
 </dl>
 <div class="admonition seealso">
@@ -2183,7 +2190,7 @@ cannot be re-used in other functions.</p>
 
 <dl class="function">
 <dt id="c.boolector_parse">
-int32_t <code class="sig-name descname">boolector_parse</code><span class="sig-paren">(</span>Btor<em> *btor</em>, FILE<em> *infile</em>, const char<em> *infile_name</em>, FILE<em> *outfile</em>, char<em> **error_msg</em>, int32_t<em> *status</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_parse" title="Permalink to this definition">¶</a></dt>
+int32_t <code class="sig-name descname">boolector_parse</code><span class="sig-paren">(</span>Btor<em> *btor</em>, FILE<em> *infile</em>, const char<em> *infile_name</em>, FILE<em> *outfile</em>, char<em> **error_msg</em>, int32_t<em> *status</em>, bool<em> *parsed_smt2</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_parse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parse input file.</p>
 <p>Input file format may be either <a class="reference external" href="http://fmv.jku.at/papers/BrummayerBiereLonsing-BPR08.pdf">BTOR</a>, <a class="reference external" href="http://fmv.jku.at/papers/NiemetzPreinerWolfBiere-CAV18.pdf">BTOR2</a>, <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/format-v1.2-r06.08.30.pdf">SMT-LIB v1</a>, or
 <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.0-r12.09.09.pdf">SMT-LIB v2</a>, the file type is detected automatically.  If the parser
@@ -2200,6 +2207,7 @@ like e.g.  ‘check-sat’ in <a class="reference external" href="http://smtlib.
 <li><p><strong>outfile</strong> – Output file.</p></li>
 <li><p><strong>error_msg</strong> – Error message.</p></li>
 <li><p><strong>status</strong> – Status of the input formula.</p></li>
+<li><p><strong>parsed_smt2</strong> – Flag indicating if an SMT-LIB v2 was parsed.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -2601,8 +2609,10 @@ void <code class="sig-name descname">boolector_reset_time</code><span class="sig
 <dl class="function">
 <dt id="c.boolector_rol">
 BoolectorNode *<code class="sig-name descname">boolector_rol</code><span class="sig-paren">(</span>Btor<em> *btor</em>, BoolectorNode<em> *n0</em>, BoolectorNode<em> *n1</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_rol" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a rotate left.</p>
-<p>The bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code> must be a power of two (greater than 1) and the
+<dd><p>Create a rotate left, with the number of bits to rotate by given as a
+bit-vector.</p>
+<p>The parameters <code class="docutils literal notranslate"><span class="pre">n0</span></code> and <code class="docutils literal notranslate"><span class="pre">n1</span></code> must either have the same bit width or
+the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code> must be a power of two (greater than 1) and the
 bit width of <code class="docutils literal notranslate"><span class="pre">n1</span></code> must be log2 of the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2619,10 +2629,31 @@ bit width of <code class="docutils literal notranslate"><span class="pre">n1</sp
 </dd></dl>
 
 <dl class="function">
+<dt id="c.boolector_roli">
+BoolectorNode *<code class="sig-name descname">boolector_roli</code><span class="sig-paren">(</span>Btor<em> *btor</em>, BoolectorNode<em> *n</em>, uint32_t<em> nbits</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_roli" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a rotate left, with the number of bits to rotate by given as a
+numeral (unsigned integer).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>btor</strong> – Boolector instance.</p></li>
+<li><p><strong>n</strong> – Bit-vector operand.</p></li>
+<li><p><strong>nbits</strong> – Number of bits to rotate by.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Bit-vector with the same bit width as <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
 <dt id="c.boolector_ror">
 BoolectorNode *<code class="sig-name descname">boolector_ror</code><span class="sig-paren">(</span>Btor<em> *btor</em>, BoolectorNode<em> *n0</em>, BoolectorNode<em> *n1</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_ror" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a rotate right.</p>
-<p>The bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code> must be a power of two (greater than 1) and the
+<dd><p>Create a rotate right, with the number of bits to rotate by given as a
+bit-vector.</p>
+<p>The parameters <code class="docutils literal notranslate"><span class="pre">n0</span></code> and <code class="docutils literal notranslate"><span class="pre">n1</span></code> must either have the same bit width or
+the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code> must be a power of two (greater than 1) and the
 bit width of <code class="docutils literal notranslate"><span class="pre">n1</span></code> must be log2 of the bit width of <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2634,6 +2665,25 @@ bit width of <code class="docutils literal notranslate"><span class="pre">n1</sp
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Bit-vector with the same bit width as <code class="docutils literal notranslate"><span class="pre">n0</span></code>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="c.boolector_rori">
+BoolectorNode *<code class="sig-name descname">boolector_rori</code><span class="sig-paren">(</span>Btor<em> *btor</em>, BoolectorNode<em> *n</em>, uint32_t<em> nbits</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_rori" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a rotate right, with the number of bits to rotate by given as a
+numeral (unsigned integer).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>btor</strong> – Boolector instance.</p></li>
+<li><p><strong>n</strong> – Bit-vector operand.</p></li>
+<li><p><strong>nbits</strong> – Number of bits to rotate by.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Bit-vector with the same bit width as <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -3048,6 +3098,11 @@ another conflict is found</p></li>
 <li><p>BTOR_FUN_EAGER_LEMMAS_ALL:
 in each refinement iteration, generate lemmas for all conflicts</p></li>
 </ul>
+</li>
+<li><p><strong>BTOR_OPT_PRINT_DIMACS</strong></p>
+<p>Enable (<code class="docutils literal notranslate"><span class="pre">value</span></code>: 1) or disable (<code class="docutils literal notranslate"><span class="pre">value</span></code>: 0) DIMACS printer.</p>
+<p>When enabled Boolector will record the CNF sent to the SAT solver and
+prints it to stdout.</p>
 </li>
 </ul>
 <p><strong>SLS Engine Options:</strong></p>
@@ -4229,12 +4284,12 @@ BoolectorNode *<code class="sig-name descname">boolector_zero</code><span class=
         <li class="right" >
           <a href="cboolector.html" title="Boolector C API documentation"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="cboolector.html" >Boolector C API documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2007-2019 The authors of Boolector.
+        &#169; Copyright 2007-2020 The authors of Boolector.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
     </div>
   </body>

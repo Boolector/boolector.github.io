@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Boolector Python API documentation &#8212; Boolector 3.1.0 documentation</title>
+    <title>Boolector Python API documentation &#8212; Boolector 3.2.0 documentation</title>
     <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
@@ -29,7 +29,7 @@
         <li class="right" >
           <a href="cboolector_options.html" title="Boolector Options"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -98,36 +98,36 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">btor</span> <span class="o">=</span> <span class="n">Boolector</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>You can configure this instance via <code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code>.
+<p>You can configure this instance via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Set_opt" title="pyboolector.Boolector.Set_opt"><code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code></a>.
 E.g., if you want to enable model generation:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">btor</span><span class="o">.</span><span class="n">Set_opt</span><span class="p">(</span><span class="n">BTOR_OPT_MODEL_GEN</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>For a detailed description of all configurable options, see
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code>.</p>
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Set_opt" title="pyboolector.Boolector.Set_opt"><code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code></a>.</p>
 <p>Next you can either parse an input file, and/or generate expressions to
-be either asserted via <code class="xref py py-func docutils literal notranslate"><span class="pre">Assert()</span></code>, or,
+be either asserted via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Assert" title="pyboolector.Boolector.Assert"><code class="xref py py-func docutils literal notranslate"><span class="pre">Assert()</span></code></a>, or,
 if incremental usage is enabled,
-assumed via <code class="xref py py-func docutils literal notranslate"><span class="pre">Assume()</span></code> (analogously to MiniSAT).
+assumed via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Assume" title="pyboolector.Boolector.Assume"><code class="xref py py-func docutils literal notranslate"><span class="pre">Assume()</span></code></a> (analogously to MiniSAT).
 Note that Boolector’s internal design is motivated by hardware design,
 hence we do not distinguish between type ‘Boolean’ and type ‘bit vector
 of length 1’.</p>
 <p>E.g., if you want to parse an input file “example.btor”,
-use <code class="xref py py-func docutils literal notranslate"><span class="pre">Parse()</span></code>:</p>
+use <a class="reference internal" href="boolector.html#pyboolector.Boolector.Parse" title="pyboolector.Boolector.Parse"><code class="xref py py-func docutils literal notranslate"><span class="pre">Parse()</span></code></a>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">error_msg</span><span class="p">)</span> <span class="o">=</span> <span class="n">btor</span><span class="o">.</span><span class="n">Parse</span><span class="p">(</span><span class="s2">&quot;example.btor&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Incremental usage is not enabled, hence, if the parser does not encounter
 an error, it returns <code class="xref py py-data docutils literal notranslate"><span class="pre">UNKNOWN</span></code>
 (for a more detailed description of the parsers return values,
-see <code class="xref py py-func docutils literal notranslate"><span class="pre">Parse()</span></code>).
+see <a class="reference internal" href="boolector.html#pyboolector.Boolector.Parse" title="pyboolector.Boolector.Parse"><code class="xref py py-func docutils literal notranslate"><span class="pre">Parse()</span></code></a>).
 However, if the parser encounters an error, it returns
 <code class="xref py py-data docutils literal notranslate"><span class="pre">PARSE_ERROR</span></code>, and an explanation of that error is
 stored in <code class="docutils literal notranslate"><span class="pre">error_msg</span></code>. If the input file specifies a (known) status
 of the input formula (either satisfiable or unsatisfiable), that status
 is stored in <code class="docutils literal notranslate"><span class="pre">status</span></code>.</p>
 <p>As an example for generating and asserting expressions via
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Assert()</span></code>, consider the following example:</p>
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Assert" title="pyboolector.Boolector.Assert"><code class="xref py py-func docutils literal notranslate"><span class="pre">Assert()</span></code></a>, consider the following example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">&lt;</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">100</span>
 </pre></div>
 </div>
@@ -148,17 +148,17 @@ the following expressions:</p>
 </div>
 <p>After parsing an input file and/or asserting/assuming expressions,
 the satisfiability of the resulting formula can be determined via
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Sat()</span></code>.
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Sat" title="pyboolector.Boolector.Sat"><code class="xref py py-func docutils literal notranslate"><span class="pre">Sat()</span></code></a>.
 If the resulting formula is satisfiable and model generation has been
-enabled via <code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code>, you can either
-print the resulting model via <code class="xref py py-func docutils literal notranslate"><span class="pre">Print_model()</span></code>,
+enabled via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Set_opt" title="pyboolector.Boolector.Set_opt"><code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code></a>, you can either
+print the resulting model via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Print_model" title="pyboolector.Boolector.Print_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">Print_model()</span></code></a>,
 or query assignments
 of bit vector and array variables or uninterpreted functions via
-<code class="xref py py-data docutils literal notranslate"><span class="pre">assignment</span></code>.
+<a class="reference internal" href="boolector.html#pyboolector.BoolectorNode.assignment" title="pyboolector.BoolectorNode.assignment"><code class="xref py py-data docutils literal notranslate"><span class="pre">assignment</span></code></a>.
 Note that querying assignments is not limited to variables—you can query
 the assignment of any arbitrary expression.</p>
 <p>E.g., given the example above, we first determine if the formula is
-satisfiable via <code class="xref py py-func docutils literal notranslate"><span class="pre">Sat()</span></code> (which it is):</p>
+satisfiable via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Sat" title="pyboolector.Boolector.Sat"><code class="xref py py-func docutils literal notranslate"><span class="pre">Sat()</span></code></a> (which it is):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">btor</span><span class="o">.</span><span class="n">Sat</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -169,7 +169,7 @@ satisfiable via <code class="xref py py-func docutils literal notranslate"><span
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">assignment</span><span class="p">))</span>  <span class="c1"># prints: y 00010101</span>
 </pre></div>
 </div>
-<p>or print the resulting model via <code class="xref py py-func docutils literal notranslate"><span class="pre">Print_model()</span></code>.
+<p>or print the resulting model via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Print_model" title="pyboolector.Boolector.Print_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">Print_model()</span></code></a>.
 Boolector supports printing models in its own format (“btor”, the default)
 or in <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.0-r12.09.09.pdf">SMT-LIB v2</a> format (“smt2”):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">btor</span><span class="o">.</span><span class="n">Print_model</span><span class="p">()</span>
@@ -211,7 +211,7 @@ and its value at index 0 is 1.</p>
 <span id="operator-overloading"></span><h3>Python Operator Overloading<a class="headerlink" href="#python-operator-overloading" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>For convenience the Boolector Python API provides the following overloaded
-operators on bit vectors (<code class="xref py py-class docutils literal notranslate"><span class="pre">BoolectorBVNode</span></code>):</p>
+operators on bit vectors (<a class="reference internal" href="boolector.html#pyboolector.BoolectorBVNode" title="pyboolector.BoolectorBVNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">BoolectorBVNode</span></code></a>):</p>
 <p><strong>Arithmetic operators:</strong> <code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">-</span> <span class="pre">*</span> <span class="pre">/</span> <span class="pre">%</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">btor</span><span class="o">.</span><span class="n">Var</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">btor</span><span class="o">.</span><span class="n">Var</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
@@ -246,7 +246,7 @@ operators on bit vectors (<code class="xref py py-class docutils literal notrans
 </div>
 <p><strong>Python slices:</strong>
 It is possible to use Python slices on bit vectors (see
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Slice()</span></code>), e.g.:</p>
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Slice" title="pyboolector.Boolector.Slice"><code class="xref py py-func docutils literal notranslate"><span class="pre">Slice()</span></code></a>), e.g.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slice_5_2</span>  <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># btor.Slice(x, 5, 2)</span>
 <span class="n">slice_5_0</span>  <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">5</span><span class="p">:]</span>   <span class="c1"># btor.Slice(x, 5, 0)</span>
 <span class="n">slice_31_5</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>   <span class="c1"># btor.Slice(x, x.width - 1, 5)</span>
@@ -254,8 +254,8 @@ It is possible to use Python slices on bit vectors (see
 </pre></div>
 </div>
 <p>Further, the API also provides convenient ways to create reads
-(see <code class="xref py py-func docutils literal notranslate"><span class="pre">Read()</span></code>) on arrays, and function applications
-(see <code class="xref py py-func docutils literal notranslate"><span class="pre">Apply()</span></code>).</p>
+(see <a class="reference internal" href="boolector.html#pyboolector.Boolector.Read" title="pyboolector.Boolector.Read"><code class="xref py py-func docutils literal notranslate"><span class="pre">Read()</span></code></a>) on arrays, and function applications
+(see <a class="reference internal" href="boolector.html#pyboolector.Boolector.Apply" title="pyboolector.Boolector.Apply"><code class="xref py py-func docutils literal notranslate"><span class="pre">Apply()</span></code></a>).</p>
 <p><strong>Reads on arrays:</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">btor</span><span class="o">.</span><span class="n">Array</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
 
@@ -275,12 +275,12 @@ It is possible to use Python slices on bit vectors (see
 <div class="section" id="automatic-constant-conversion">
 <span id="const-conversion"></span><h3>Automatic Constant Conversion<a class="headerlink" href="#automatic-constant-conversion" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><p>For almost every method of <code class="xref py py-class docutils literal notranslate"><span class="pre">Boolector</span></code> that creates nodes,
-instead of passing arguments of the type <code class="xref py py-class docutils literal notranslate"><span class="pre">BoolectorNode</span></code>,
+<div><p>For almost every method of <a class="reference internal" href="boolector.html#pyboolector.Boolector" title="pyboolector.Boolector"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boolector</span></code></a> that creates nodes,
+instead of passing arguments of the type <a class="reference internal" href="boolector.html#pyboolector.BoolectorNode" title="pyboolector.BoolectorNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">BoolectorNode</span></code></a>,
 the Python API allows to pass constants as arguments.
 The only requirement is that it must be possible to derive the bit width of
 the constant operands from the remaining operands.
-For example, binary operators like <code class="xref py py-func docutils literal notranslate"><span class="pre">Add()</span></code>
+For example, binary operators like <a class="reference internal" href="boolector.html#pyboolector.Boolector.Add" title="pyboolector.Boolector.Add"><code class="xref py py-func docutils literal notranslate"><span class="pre">Add()</span></code></a>
 operands may be a constant, and its bit width will be derived from the other
 non-constant operand, e.g.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">btor</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span>         <span class="c1"># btor.Add(x, btor.Const(42, x.width))</span>
@@ -309,17 +309,17 @@ derived from the function’s signature, e.g.:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Automatic constant conversion is not possible for the following operators:
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Not()</span></code>,
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Neg()</span></code>,
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Redor()</span></code>,
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Redxor()</span></code>,
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Redand()</span></code>,
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Slice()</span></code>,
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Uext()</span></code>,
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Sext()</span></code>,
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Inc()</span></code>,
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Dec()</span></code>, and
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Concat()</span></code>
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Not" title="pyboolector.Boolector.Not"><code class="xref py py-func docutils literal notranslate"><span class="pre">Not()</span></code></a>,
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Neg" title="pyboolector.Boolector.Neg"><code class="xref py py-func docutils literal notranslate"><span class="pre">Neg()</span></code></a>,
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Redor" title="pyboolector.Boolector.Redor"><code class="xref py py-func docutils literal notranslate"><span class="pre">Redor()</span></code></a>,
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Redxor" title="pyboolector.Boolector.Redxor"><code class="xref py py-func docutils literal notranslate"><span class="pre">Redxor()</span></code></a>,
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Redand" title="pyboolector.Boolector.Redand"><code class="xref py py-func docutils literal notranslate"><span class="pre">Redand()</span></code></a>,
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Slice" title="pyboolector.Boolector.Slice"><code class="xref py py-func docutils literal notranslate"><span class="pre">Slice()</span></code></a>,
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Uext" title="pyboolector.Boolector.Uext"><code class="xref py py-func docutils literal notranslate"><span class="pre">Uext()</span></code></a>,
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Sext" title="pyboolector.Boolector.Sext"><code class="xref py py-func docutils literal notranslate"><span class="pre">Sext()</span></code></a>,
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Inc" title="pyboolector.Boolector.Inc"><code class="xref py py-func docutils literal notranslate"><span class="pre">Inc()</span></code></a>,
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Dec" title="pyboolector.Boolector.Dec"><code class="xref py py-func docutils literal notranslate"><span class="pre">Dec()</span></code></a>, and
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Concat" title="pyboolector.Boolector.Concat"><code class="xref py py-func docutils literal notranslate"><span class="pre">Concat()</span></code></a>
 as the bit with of the resulting node cannot be determined.</p>
 </div>
 </div></blockquote>
@@ -328,13 +328,13 @@ as the bit with of the resulting node cannot be determined.</p>
 <div class="section" id="options">
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>Boolector can be configured either via <code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code>,
+<div><p>Boolector can be configured either via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Set_opt" title="pyboolector.Boolector.Set_opt"><code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code></a>,
 or via environment variables of the form:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BTOR</span><span class="o">&lt;</span><span class="n">capitalized</span> <span class="n">option</span> <span class="n">name</span> <span class="n">without</span> <span class="s1">&#39;_&#39;</span><span class="o">&gt;=&lt;</span><span class="n">value</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>For a list and detailed descriptions of all available options,
-see <code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code>.</p>
+see <a class="reference internal" href="boolector.html#pyboolector.Boolector.Set_opt" title="pyboolector.Boolector.Set_opt"><code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code></a>.</p>
 <p>E.g., given a Boolector instance <code class="docutils literal notranslate"><span class="pre">btor</span></code>, model generation is enabled either
 via</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">btor</span><span class="o">.</span><span class="n">Set_opt</span><span class="p">(</span><span class="n">BTOR_OPT_MODEL_GEN</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -371,9 +371,9 @@ expressions.
 By asserting an expression, it will be permanently added to the
 formula.
 Assumptions, in contrast, are cleared after a call to
-<code class="xref py py-func docutils literal notranslate"><span class="pre">Sat()</span></code>.
+<a class="reference internal" href="boolector.html#pyboolector.Boolector.Sat" title="pyboolector.Boolector.Sat"><code class="xref py py-func docutils literal notranslate"><span class="pre">Sat()</span></code></a>.
 You can query assumptions that force a formula to be unsatisfiable
-via <code class="xref py py-func docutils literal notranslate"><span class="pre">Failed()</span></code>.</p>
+via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Failed" title="pyboolector.Boolector.Failed"><code class="xref py py-func docutils literal notranslate"><span class="pre">Failed()</span></code></a>.</p>
 </div></blockquote>
 <div class="section" id="operators">
 <h3>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h3>
@@ -383,7 +383,7 @@ operators as documented in <a class="reference external" href="http://fmv.jku.at
 Boolector’s API, however, provides a richer set of operators for
 convenience, where non-base operators are internally rewritten to use
 base operators only.
-E.g., two’s complement (<code class="xref py py-func docutils literal notranslate"><span class="pre">Neg()</span></code>) is rewritten as
+E.g., two’s complement (<a class="reference internal" href="boolector.html#pyboolector.Boolector.Neg" title="pyboolector.Boolector.Neg"><code class="xref py py-func docutils literal notranslate"><span class="pre">Neg()</span></code></a>) is rewritten as
 one’s complement and addition of 1.
 Note that this behaviour is not influenced by the rewrite level chosen.</p>
 </div></blockquote>
@@ -399,8 +399,8 @@ Note that Boolector not only simplifies expressions during construction
 of the expression DAG—for each call to ref boolector_sat,
 various simplification techniques and rewriting phases are initiated.
 You can force Boolector to initiate rewriting and simplify the expression
-DAG via <code class="xref py py-func docutils literal notranslate"><span class="pre">Simplify()</span></code>.
-The rewrite level can be configured via <code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code>.</p>
+DAG via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Simplify" title="pyboolector.Boolector.Simplify"><code class="xref py py-func docutils literal notranslate"><span class="pre">Simplify()</span></code></a>.
+The rewrite level can be configured via <a class="reference internal" href="boolector.html#pyboolector.Boolector.Set_opt" title="pyboolector.Boolector.Set_opt"><code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code></a>.</p>
 </div></blockquote>
 </div>
 </div>
@@ -844,11 +844,11 @@ The rewrite level can be configured via <code class="xref py py-func docutils li
         <li class="right" >
           <a href="cboolector_options.html" title="Boolector Options"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2007-2019 The authors of Boolector.
+        &#169; Copyright 2007-2020 The authors of Boolector.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
     </div>
   </body>

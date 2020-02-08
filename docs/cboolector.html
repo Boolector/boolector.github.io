@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Boolector C API documentation &#8212; Boolector 3.1.0 documentation</title>
+    <title>Boolector C API documentation &#8212; Boolector 3.2.0 documentation</title>
     <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
@@ -29,7 +29,7 @@
         <li class="right" >
           <a href="index.html" title="Welcome to Boolector’s API documentation!"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -676,6 +676,8 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
   <span class="kt">uint32_t</span> <span class="n">i</span><span class="p">,</span> <span class="n">size</span><span class="p">;</span>
 
   <span class="n">btor</span>       <span class="o">=</span> <span class="n">boolector_new</span> <span class="p">();</span>
+  <span class="n">boolector_set_opt</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">BTOR_OPT_OUTPUT_NUMBER_FORMAT</span><span class="p">,</span> <span class="n">BTOR_OUTPUT_BASE_HEX</span><span class="p">);</span>
+
   <span class="n">sort_index</span> <span class="o">=</span> <span class="n">boolector_bitvec_sort</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">ARRAY2_EXAMPLE_INDEX_BW</span><span class="p">);</span>
   <span class="n">sort_elem</span>  <span class="o">=</span> <span class="n">boolector_bitvec_sort</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">ARRAY2_EXAMPLE_ELEM_BW</span><span class="p">);</span>
   <span class="n">sort_array</span> <span class="o">=</span> <span class="n">boolector_array_sort</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">sort_index</span><span class="p">,</span> <span class="n">sort_elem</span><span class="p">);</span>
@@ -707,7 +709,7 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
   <span class="p">{</span>
     <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Array1:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Array1[%s] = %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Array1[#x%s] = #x%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
     <span class="n">boolector_free_array_assignment</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">indices</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
   <span class="p">}</span>
 
@@ -716,7 +718,7 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
   <span class="p">{</span>
     <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Array2:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Array2[%s] = %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Array2[#x%s] = #x%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
     <span class="n">boolector_free_array_assignment</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">indices</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
   <span class="p">}</span>
 
@@ -725,7 +727,7 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
   <span class="p">{</span>
     <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Write1:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Write1[%s] = %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Write1[#x%s] = #x%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
     <span class="n">boolector_free_array_assignment</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">indices</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
   <span class="p">}</span>
 
@@ -734,7 +736,7 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
   <span class="p">{</span>
     <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Write2:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Write2[%s] = %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+      <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Write2[#x%s] = #x%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
     <span class="n">boolector_free_array_assignment</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">indices</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
   <span class="p">}</span>
 
@@ -848,11 +850,11 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
         <li class="right" >
           <a href="index.html" title="Welcome to Boolector’s API documentation!"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2007-2019 The authors of Boolector.
+        &#169; Copyright 2007-2020 The authors of Boolector.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
     </div>
   </body>

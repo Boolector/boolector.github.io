@@ -254,6 +254,13 @@ Boolector Options
   * BTOR_FUN_EAGER_LEMMAS_ALL:
     in each refinement iteration, generate lemmas for all conflicts
 
+* **BTOR_OPT_PRINT_DIMACS**
+
+  Enable (``value``: 1) or disable (``value``: 0) DIMACS printer.
+
+  When enabled Boolector will record the CNF sent to the SAT solver and
+  prints it to stdout.
+
 **SLS Engine Options:**
 
 * **BTOR_OPT_SLS_NFIPS**
