@@ -1,5 +1,8 @@
 ## News
 
+- Boolector version [3.2.0](
+    https://github.com/Boolector/boolector/releases/tag/3.2.0) released.
+
 - Boolector version [3.1.0](
     https://github.com/Boolector/boolector/releases/tag/3.1.0) released.
 
