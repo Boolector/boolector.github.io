@@ -552,7 +552,7 @@ Functions
 
 .. c:function:: void boolector_free_bits (Btor *btor, const char *bits)
 
-  Free a bits string for bit-vector constants.
+  Free a bits string retrieved via :c:func:`boolector_get_bits`.
 
   :param btor: Boolector instance.
   :param bits: String which has to be freed.
@@ -653,11 +653,15 @@ Functions
 
 .. c:function:: const char *boolector_get_bits (Btor *btor, BoolectorNode *node)
 
-  Get the bit-vector of a constant node as a bit string.
+  Get the bit-vector of a constant node represented as a bit string.
+  Must be freed via :c:func:`boolector_free_bits`.
 
   :param btor: Boolector instance.
   :param node: Constant node.
   :return: String representing the bits of ``node``.
+
+  .. seealso::
+    :c:func:`boolector_free_bits`
 
 
 .. c:function:: Btor *boolector_get_btor (BoolectorNode *node)
@@ -1098,6 +1102,7 @@ Functions
   Retrieve the node belonging to Boolector instance ``btor`` that matches
   given BoolectorNode ``node`` by id. This is intended to be used for handling
   expressions of a cloned instance (:c:func:`boolector_clone`).
+  Aborts no matching node exists in given Boolector instance.
 
   :param btor: Boolector instance.
   :param node: Boolector node.
@@ -1108,13 +1113,14 @@ Functions
     Matching a node against another increases the reference
     count of the returned match, which must therefore be released appropriately
     (:c:func:`boolector_release`).
-    Only nodes created before the :c:func:`boolector_clone` call can be matched.
+    Only nodes created before a :c:func:`boolector_clone` call can be matched.
 
 
 .. c:function:: BoolectorNode *boolector_match_node_by_id (Btor *btor, int32_t id)
 
   Retrieve the node belonging to Boolector instance ``btor`` that matches
-  given ``id``.
+  given ``id``.  Aborts if no node with given ``id`` exists in given Boolector
+  instance.
 
   :param btor: Boolector instance.
   :param id: Boolector node id.
@@ -1125,22 +1131,25 @@ Functions
     Matching a node against another increases the reference
     count of the returned match, which must therefore be released appropriately
     (:c:func:`boolector_release`).
+    Only nodes created before a :c:func:`boolector_clone` call can be matched.
 
 
 .. c:function:: BoolectorNode *boolector_match_node_by_symbol (Btor *btor, const char *symbol)
 
   Retrieve the node belonging to Boolector instance ``btor`` that matches
-  given ``symbol``.
+  given ``symbol``. Aborts if no node with given ``symbol`` exists in given
+  Boolector instance.
 
   :param btor: Boolector instance.
   :param symbol: The symbol of an expression.
   :return: The Boolector node that matches given ``node`` in Boolector instance
-           ``btor`` by symbol.
+           ``btor`` by id.
 
   .. note::
     Matching a node against another increases the reference
     count of the returned match, which must therefore be released appropriately
     (:c:func:`boolector_release`).
+    Only nodes created before a :c:func:`boolector_clone` call can be matched.
 
 
 .. c:function:: BoolectorNode *boolector_max_signed (Btor *btor, BoolectorSort sort)

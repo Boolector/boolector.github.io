@@ -1,17 +1,18 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>Boolector C API documentation &#8212; Boolector 3.2.0 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolector C API documentation &#8212; Boolector 3.2.1 documentation</title>
     <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
-    <script type="text/javascript" src="static/jquery.js"></script>
-    <script type="text/javascript" src="static/underscore.js"></script>
-    <script type="text/javascript" src="static/doctools.js"></script>
-    <script type="text/javascript" src="static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="C Interface" href="cboolector_index.html" />
@@ -29,52 +30,10 @@
         <li class="right" >
           <a href="index.html" title="Welcome to Boolector’s API documentation!"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Boolector C API documentation</a></li> 
       </ul>
-    </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Boolector C API documentation</a><ul>
-<li><a class="reference internal" href="#interface">Interface</a></li>
-<li><a class="reference internal" href="#quickstart">Quickstart</a></li>
-<li><a class="reference internal" href="#options">Options</a><ul>
-<li><a class="reference internal" href="#api-tracing">API Tracing</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#internals">Internals</a><ul>
-<li><a class="reference internal" href="#operators">Operators</a></li>
-<li><a class="reference internal" href="#rewriting">Rewriting</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#examples">Examples</a><ul>
-<li><a class="reference internal" href="#bit-vector-examples">Bit vector examples</a></li>
-<li><a class="reference internal" href="#array-examples">Array examples</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Welcome to Boolector’s API documentation!</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="cboolector_index.html"
-                        title="next chapter">C Interface</a></p>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -449,7 +408,6 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
 <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;boolector.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;btoropt.h&quot;</span><span class="cp"></span>
 
 <span class="cp">#define BV2_EXAMPLE_NUM_BITS 8</span>
 
@@ -654,7 +612,6 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
 <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;boolector.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;btoropt.h&quot;</span><span class="cp"></span>
 
 <span class="cp">#define ARRAY2_EXAMPLE_ELEM_BW 8</span>
 <span class="cp">#define ARRAY2_EXAMPLE_INDEX_BW 1</span>
@@ -761,8 +718,9 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
 </div>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;assert.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;limits.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
+
 <span class="cp">#include</span> <span class="cpf">&quot;boolector.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;btoropt.h&quot;</span><span class="cp"></span>
 
 <span class="cp">#define ARRAY3_EXAMPLE_ELEM_BW 8</span>
 <span class="cp">#define ARRAY3_EXAMPLE_INDEX_BW 1</span>
@@ -833,7 +791,51 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
 </div>
 
 
+            <div class="clearer"></div>
           </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Boolector C API documentation</a><ul>
+<li><a class="reference internal" href="#interface">Interface</a></li>
+<li><a class="reference internal" href="#quickstart">Quickstart</a></li>
+<li><a class="reference internal" href="#options">Options</a><ul>
+<li><a class="reference internal" href="#api-tracing">API Tracing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#internals">Internals</a><ul>
+<li><a class="reference internal" href="#operators">Operators</a></li>
+<li><a class="reference internal" href="#rewriting">Rewriting</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#bit-vector-examples">Bit vector examples</a></li>
+<li><a class="reference internal" href="#array-examples">Array examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Boolector’s API documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="cboolector_index.html"
+                        title="next chapter">C Interface</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -850,12 +852,13 @@ The rewrite level can be configured via <a class="reference internal" href="cboo
         <li class="right" >
           <a href="index.html" title="Welcome to Boolector’s API documentation!"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Boolector C API documentation</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2007-2020 The authors of Boolector.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

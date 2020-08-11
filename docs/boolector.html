@@ -1,17 +1,18 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>Module Index: pyboolector &#8212; Boolector 3.2.0 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Index: pyboolector &#8212; Boolector 3.2.1 documentation</title>
     <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
-    <script type="text/javascript" src="static/jquery.js"></script>
-    <script type="text/javascript" src="static/underscore.js"></script>
-    <script type="text/javascript" src="static/doctools.js"></script>
-    <script type="text/javascript" src="static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Boolector Options" href="pyboolector_options.html" />
@@ -29,30 +30,11 @@
         <li class="right" >
           <a href="pyboolector.html" title="Boolector Python API documentation"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="pyboolector.html" accesskey="U">Boolector Python API documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="pyboolector.html" accesskey="U">Boolector Python API documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Module Index: pyboolector</a></li> 
       </ul>
-    </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="pyboolector.html"
-                        title="previous chapter">Boolector Python API documentation</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="pyboolector_options.html"
-                        title="next chapter">Boolector Options</a></p>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -61,14 +43,16 @@
             
   <div class="section" id="module-pyboolector">
 <span id="module-index-pyboolector"></span><h1>Module Index: pyboolector<a class="headerlink" href="#module-pyboolector" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+
+<p>The Python API of the SMT solver Boolector.</p>
+<dl class="py class">
 <dt id="pyboolector.Boolector">
 <em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">Boolector</code><a class="headerlink" href="#pyboolector.Boolector" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.8/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The class representing a Boolector instance.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Add">
-<code class="sig-name descname">Add</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Add" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Add" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector addition.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -93,9 +77,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.And">
-<code class="sig-name descname">And</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.And" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">And</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.And" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector <em>and</em>.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -120,9 +104,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Apply">
-<code class="sig-name descname">Apply</code><span class="sig-paren">(</span><em class="sig-param">args</em>, <em class="sig-param">fun</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Apply" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">fun</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Apply" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a function application on function <code class="docutils literal notranslate"><span class="pre">fun</span></code> with arguments
 <code class="docutils literal notranslate"><span class="pre">args</span></code> (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
 <p>It is also possible to create a function application as follows
@@ -148,9 +132,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Array">
-<code class="sig-name descname">Array</code><span class="sig-paren">(</span><em class="sig-param">sort</em>, <em class="sig-param">symbol = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Array" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sort</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Array" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a one-dimensional bit vector array variable of sort
 <code class="docutils literal notranslate"><span class="pre">sort</span></code> with symbol <code class="docutils literal notranslate"><span class="pre">symbol</span></code>.</p>
 <p>An array variable’s symbol is used as a simple means of
@@ -184,9 +168,9 @@ array variable.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.ArraySort">
-<code class="sig-name descname">ArraySort</code><span class="sig-paren">(</span><em class="sig-param">index</em>, <em class="sig-param">elem</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.ArraySort" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">ArraySort</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">elem</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.ArraySort" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create array sort.</p>
 <p>See <a class="reference internal" href="#pyboolector.Boolector.Array" title="pyboolector.Boolector.Array"><code class="xref py py-func docutils literal notranslate"><span class="pre">Array()</span></code></a>.</p>
 <dl class="field-list simple">
@@ -205,7 +189,7 @@ array variable.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Assert">
 <code class="sig-name descname">Assert</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">...</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Assert" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add one or more constraints.</p>
@@ -217,12 +201,10 @@ array variable.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Assume">
 <code class="sig-name descname">Assume</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">...</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Assume" title="Permalink to this definition">¶</a></dt>
-<dd><blockquote>
-<div><p>Add one or more assumptions.</p>
-</div></blockquote>
+<dd><p>Add one or more assumptions.</p>
 <p>You must enable Boolector’s incremental usage via
 <a class="reference internal" href="#pyboolector.Boolector.Set_opt" title="pyboolector.Boolector.Set_opt"><code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code></a> before you can add
 assumptions.
@@ -240,9 +222,9 @@ in MiniSAT.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.BitVecSort">
-<code class="sig-name descname">BitVecSort</code><span class="sig-paren">(</span><em class="sig-param">width</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.BitVecSort" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">BitVecSort</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">width</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.BitVecSort" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create bit vector sort of bit width <code class="docutils literal notranslate"><span class="pre">width</span></code>.</p>
 <p>See <a class="reference internal" href="#pyboolector.Boolector.UF" title="pyboolector.Boolector.UF"><code class="xref py py-func docutils literal notranslate"><span class="pre">UF()</span></code></a>.</p>
 <dl class="field-list simple">
@@ -258,7 +240,7 @@ in MiniSAT.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.BoolSort">
 <code class="sig-name descname">BoolSort</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.BoolSort" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create Boolean sort.</p>
@@ -275,7 +257,7 @@ only.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Clone">
 <code class="sig-name descname">Clone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Clone" title="Permalink to this definition">¶</a></dt>
 <dd><p>Clone an instance of Boolector.</p>
@@ -301,9 +283,9 @@ prior to the first <a class="reference internal" href="#pyboolector.Boolector.Sa
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Concat">
-<code class="sig-name descname">Concat</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Concat" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Concat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Concat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create the concatenation of two bit vectors.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -321,9 +303,9 @@ prior to the first <a class="reference internal" href="#pyboolector.Boolector.Sa
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Cond">
-<code class="sig-name descname">Cond</code><span class="sig-paren">(</span><em class="sig-param">cond</em>, <em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Cond" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Cond</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cond</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Cond" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an if-then-else.</p>
 <p>If condition <code class="docutils literal notranslate"><span class="pre">cond</span></code> is true, then <code class="docutils literal notranslate"><span class="pre">a</span></code> is returned, else <code class="docutils literal notranslate"><span class="pre">b</span></code>
 is returned.
@@ -346,9 +328,9 @@ vectors (see <a class="reference internal" href="pyboolector.html#const-conversi
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Const">
-<code class="sig-name descname">Const</code><span class="sig-paren">(</span><em class="sig-param">c</em>, <em class="sig-param">width = 1</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Const" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Const</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">c</span></em>, <em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Const" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector constant of value <code class="docutils literal notranslate"><span class="pre">c</span></code> and bit width <code class="docutils literal notranslate"><span class="pre">width</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -370,9 +352,9 @@ vectors (see <a class="reference internal" href="pyboolector.html#const-conversi
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.ConstArray">
-<code class="sig-name descname">ConstArray</code><span class="sig-paren">(</span><em class="sig-param">sort</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.ConstArray" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">ConstArray</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sort</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.ConstArray" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a one-dimensional constant bit-vector array with sort
 <code class="docutils literal notranslate"><span class="pre">sort</span></code> initialized with value <code class="docutils literal notranslate"><span class="pre">value</span></code>.</p>
 <dl class="field-list simple">
@@ -393,9 +375,22 @@ vectors (see <a class="reference internal" href="pyboolector.html#const-conversi
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
+<dt id="pyboolector.Boolector.Copyright">
+<code class="sig-name descname">Copyright</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Copyright" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The copyright information.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pyboolector.Boolector.Dec">
-<code class="sig-name descname">Dec</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Dec" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Dec</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Dec" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector expression that decrements bit vector <code class="docutils literal notranslate"><span class="pre">n</span></code>
 by one.</p>
 <dl class="field-list simple">
@@ -411,9 +406,9 @@ by one.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Dump">
-<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><em class="sig-param">format = &quot;btor&quot;</em>, <em class="sig-param">outfile = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Dump" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">format</span><span class="o">=</span><span class="default_value">'btor'</span></em>, <em class="sig-param"><span class="n">outfile</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Dump" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dump input formula to output file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -425,9 +420,9 @@ by one.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Eq">
-<code class="sig-name descname">Eq</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Eq" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Eq</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Eq" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector or array equality.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> are either bit vectors with the same bit
 width, or arrays of the same type (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -452,9 +447,9 @@ width, or arrays of the same type (see <a class="reference internal" href="pyboo
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Exists">
-<code class="sig-name descname">Exists</code><span class="sig-paren">(</span><em class="sig-param">params</em>, <em class="sig-param">body</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Exists" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Exists</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">body</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Exists" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an existentially quantified formula.</p>
 <p>See <a class="reference internal" href="#pyboolector.Boolector.Param" title="pyboolector.Boolector.Param"><code class="xref py py-func docutils literal notranslate"><span class="pre">Param()</span></code></a></p>
 <dl class="field-list simple">
@@ -473,7 +468,7 @@ width, or arrays of the same type (see <a class="reference internal" href="pyboo
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Failed">
 <code class="sig-name descname">Failed</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">...</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Failed" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine if any of the given assumptions are failed assumptions.</p>
@@ -495,7 +490,7 @@ failed assumptions in MiniSAT.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Fixate_assumptions">
 <code class="sig-name descname">Fixate_assumptions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Fixate_assumptions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add all assumptions added since the last
@@ -503,9 +498,9 @@ failed assumptions in MiniSAT.</p>
 <p>See <a class="reference internal" href="#pyboolector.Boolector.Assume" title="pyboolector.Boolector.Assume"><code class="xref py py-func docutils literal notranslate"><span class="pre">Assume()</span></code></a>.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Forall">
-<code class="sig-name descname">Forall</code><span class="sig-paren">(</span><em class="sig-param">params</em>, <em class="sig-param">body</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Forall" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Forall</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">body</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Forall" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an universally quantified formula.</p>
 <p>See <a class="reference internal" href="#pyboolector.Boolector.Param" title="pyboolector.Boolector.Param"><code class="xref py py-func docutils literal notranslate"><span class="pre">Param()</span></code></a></p>
 <dl class="field-list simple">
@@ -524,9 +519,9 @@ failed assumptions in MiniSAT.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Fun">
-<code class="sig-name descname">Fun</code><span class="sig-paren">(</span><em class="sig-param">params</em>, <em class="sig-param">body</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Fun" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Fun</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">body</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Fun" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a function with function body <code class="docutils literal notranslate"><span class="pre">body</span></code>, parameterized
 over <code class="docutils literal notranslate"><span class="pre">params</span></code>.</p>
 <p>This kind of node is similar to macros in the <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.0-r12.09.09.pdf">SMT-LIB v2</a>
@@ -555,9 +550,9 @@ Call a function via <a class="reference internal" href="#pyboolector.Boolector.A
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.FunSort">
-<code class="sig-name descname">FunSort</code><span class="sig-paren">(</span><em class="sig-param">domain</em>, <em class="sig-param">codomain</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.FunSort" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">FunSort</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">codomain</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.FunSort" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create function sort.</p>
 <p>See <a class="reference internal" href="#pyboolector.Boolector.UF" title="pyboolector.Boolector.UF"><code class="xref py py-func docutils literal notranslate"><span class="pre">UF()</span></code></a>.</p>
 <dl class="field-list simple">
@@ -576,9 +571,9 @@ Call a function via <a class="reference internal" href="#pyboolector.Boolector.A
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Get_opt">
-<code class="sig-name descname">Get_opt</code><span class="sig-paren">(</span><em class="sig-param">opt</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Get_opt" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Get_opt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">opt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Get_opt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the Boolector option with name <code class="docutils literal notranslate"><span class="pre">opt</span></code>.</p>
 <p>For a list of all available options, see
 <a class="reference internal" href="#pyboolector.Boolector.Set_opt" title="pyboolector.Boolector.Set_opt"><code class="xref py py-func docutils literal notranslate"><span class="pre">Set_opt()</span></code></a>.</p>
@@ -595,9 +590,22 @@ Call a function via <a class="reference internal" href="#pyboolector.Boolector.A
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
+<dt id="pyboolector.Boolector.GitId">
+<code class="sig-name descname">GitId</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.GitId" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The git commit sha.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pyboolector.Boolector.Iff">
-<code class="sig-name descname">Iff</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Iff" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Iff</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Iff" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a Boolean equivalence.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have bit width one
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -617,9 +625,9 @@ Call a function via <a class="reference internal" href="#pyboolector.Boolector.A
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Implies">
-<code class="sig-name descname">Implies</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Implies" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Implies</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Implies" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a Boolean implication.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have bit width one
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -639,9 +647,9 @@ Call a function via <a class="reference internal" href="#pyboolector.Boolector.A
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Inc">
-<code class="sig-name descname">Inc</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Inc" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Inc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Inc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector expression that increments bit vector <code class="docutils literal notranslate"><span class="pre">n</span></code>
 by one.</p>
 <dl class="field-list simple">
@@ -657,9 +665,9 @@ by one.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Match">
-<code class="sig-name descname">Match</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Match" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Match</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Match" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the node matching given node <code class="docutils literal notranslate"><span class="pre">n</span></code> by id.</p>
 <p>This is intended to be used for handling expressions of a
 cloned instance (see <a class="reference internal" href="#pyboolector.Boolector.Clone" title="pyboolector.Boolector.Clone"><code class="xref py py-func docutils literal notranslate"><span class="pre">Clone()</span></code></a>).</p>
@@ -688,9 +696,9 @@ cloned instance (see <a class="reference internal" href="#pyboolector.Boolector.
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Match_by_symbol">
-<code class="sig-name descname">Match_by_symbol</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Match_by_symbol" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Match_by_symbol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Match_by_symbol" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the node matching symbol <code class="docutils literal notranslate"><span class="pre">s</span></code>.</p>
 <p>E.g.,</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">btor</span> <span class="o">=</span> <span class="n">Boolector</span><span class="p">()</span>
@@ -711,9 +719,9 @@ cloned instance (see <a class="reference internal" href="#pyboolector.Boolector.
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Mul">
-<code class="sig-name descname">Mul</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Mul" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Mul</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Mul" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector multiplication.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -738,9 +746,9 @@ cloned instance (see <a class="reference internal" href="#pyboolector.Boolector.
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Nand">
-<code class="sig-name descname">Nand</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Nand" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Nand</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Nand" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector <em>nand</em>.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -760,9 +768,9 @@ cloned instance (see <a class="reference internal" href="#pyboolector.Boolector.
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Ne">
-<code class="sig-name descname">Ne</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ne" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Ne</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ne" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector or array inequality.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> are either bit vectors with the same bit
 width, or arrays of the same type (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -787,9 +795,9 @@ width, or arrays of the same type (see <a class="reference internal" href="pyboo
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Neg">
-<code class="sig-name descname">Neg</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Neg" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Neg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Neg" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create the two’s complement of bit vector node <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 <p>It is also possible to create the two’s complement as follows
 (see <a class="reference internal" href="pyboolector.html#operator-overloading"><span class="std std-ref">Python Operator Overloading</span></a>):</p>
@@ -809,9 +817,9 @@ width, or arrays of the same type (see <a class="reference internal" href="pyboo
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Nor">
-<code class="sig-name descname">Nor</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Nor" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Nor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Nor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector <em>nor</em>.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -831,9 +839,9 @@ width, or arrays of the same type (see <a class="reference internal" href="pyboo
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Not">
-<code class="sig-name descname">Not</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Not" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Not</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Not" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create the one’s complement of bit vector node <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 <p>It is also possible to create the one’s complement as follows
 (see <a class="reference internal" href="pyboolector.html#operator-overloading"><span class="std std-ref">Python Operator Overloading</span></a>):</p>
@@ -853,7 +861,7 @@ width, or arrays of the same type (see <a class="reference internal" href="pyboo
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Options">
 <code class="sig-name descname">Options</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Options" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a <a class="reference internal" href="#pyboolector.BoolectorOptions" title="pyboolector.BoolectorOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">BoolectorOptions</span></code></a> iterator.</p>
@@ -874,9 +882,9 @@ width, or arrays of the same type (see <a class="reference internal" href="pyboo
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Or">
-<code class="sig-name descname">Or</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Or" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Or</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Or" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector <em>or</em>.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -901,9 +909,9 @@ width, or arrays of the same type (see <a class="reference internal" href="pyboo
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Param">
-<code class="sig-name descname">Param</code><span class="sig-paren">(</span><em class="sig-param">sort</em>, <em class="sig-param">symbol = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Param" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Param</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sort</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Param" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a function parameter of sort <code class="docutils literal notranslate"><span class="pre">sort</span></code>.</p>
 <p>This kind of node is used to create parameterized expressions,
 which in turn are used to create functions.
@@ -929,9 +937,9 @@ other functions.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Parse">
-<code class="sig-name descname">Parse</code><span class="sig-paren">(</span><em class="sig-param">infile</em>, <em class="sig-param">outfile = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Parse" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">infile</span></em>, <em class="sig-param"><span class="n">outfile</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Parse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parse input file.</p>
 <p>Input file format may be either <a class="reference external" href="http://fmv.jku.at/papers/BrummayerBiereLonsing-BPR08.pdf">BTOR</a>, <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/format-v1.2-r06.08.30.pdf">SMT-LIB v1</a>, or
 <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.0-r12.09.09.pdf">SMT-LIB v2</a>, the file type is detected automatically.</p>
@@ -950,9 +958,9 @@ other functions.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Pop">
-<code class="sig-name descname">Pop</code><span class="sig-paren">(</span><em class="sig-param">level</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Pop" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Pop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Pop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Pop context levels.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -971,9 +979,9 @@ boolector_sat call no matter at what level they were assumed.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Print_model">
-<code class="sig-name descname">Print_model</code><span class="sig-paren">(</span><em class="sig-param">format = &quot;btor&quot;</em>, <em class="sig-param">outfile = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Print_model" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Print_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">format</span><span class="o">=</span><span class="default_value">'btor'</span></em>, <em class="sig-param"><span class="n">outfile</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Print_model" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print model to output file.</p>
 <p>Supported model formats are Boolector’s own model format (“btor”)
 and <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.0-r12.09.09.pdf">SMT-LIB v2</a> (“smt2”).</p>
@@ -1019,9 +1027,9 @@ and its value at index 0 is 1.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Push">
-<code class="sig-name descname">Push</code><span class="sig-paren">(</span><em class="sig-param">level</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Push" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Push</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Push" title="Permalink to this definition">¶</a></dt>
 <dd><p>Push new context levels.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1040,9 +1048,9 @@ boolector_sat call no matter at what level they were assumed.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Read">
-<code class="sig-name descname">Read</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Read" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Read" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a read on array <code class="docutils literal notranslate"><span class="pre">a</span></code> at position <code class="docutils literal notranslate"><span class="pre">b</span></code>
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
 <p>It is also possible to create a read as follows
@@ -1066,9 +1074,9 @@ boolector_sat call no matter at what level they were assumed.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Redand">
-<code class="sig-name descname">Redand</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Redand" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Redand</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Redand" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an <em>and</em> reduction of node <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 <p>All bits of node <code class="docutils literal notranslate"><span class="pre">n</span></code> are combined by an Boolean <em>and</em>.</p>
 <dl class="field-list simple">
@@ -1084,9 +1092,9 @@ boolector_sat call no matter at what level they were assumed.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Redor">
-<code class="sig-name descname">Redor</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Redor" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Redor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Redor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an <em>or</em> reduction of node <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 <p>All bits of node <code class="docutils literal notranslate"><span class="pre">n</span></code> are combined by an Boolean <em>or</em>.</p>
 <dl class="field-list simple">
@@ -1102,9 +1110,9 @@ boolector_sat call no matter at what level they were assumed.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Redxor">
-<code class="sig-name descname">Redxor</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Redxor" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Redxor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Redxor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an <em>xor</em> reduction of node <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 <p>All bits of node <code class="docutils literal notranslate"><span class="pre">n</span></code> are combined by an Boolean <em>xor</em>.</p>
 <dl class="field-list simple">
@@ -1120,9 +1128,9 @@ boolector_sat call no matter at what level they were assumed.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Repeat">
-<code class="sig-name descname">Repeat</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Repeat" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Repeat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Repeat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create <code class="docutils literal notranslate"><span class="pre">n</span></code> concatenations of bit vector <code class="docutils literal notranslate"><span class="pre">a</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1140,7 +1148,7 @@ boolector_sat call no matter at what level they were assumed.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Reset_assumptions">
 <code class="sig-name descname">Reset_assumptions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Reset_assumptions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove all assumptions added since the last
@@ -1148,9 +1156,9 @@ boolector_sat call no matter at what level they were assumed.</p>
 <p>See <a class="reference internal" href="#pyboolector.Boolector.Assume" title="pyboolector.Boolector.Assume"><code class="xref py py-func docutils literal notranslate"><span class="pre">Assume()</span></code></a>.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Rol">
-<code class="sig-name descname">Rol</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Rol" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Rol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Rol" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a rotate left.</p>
 <p>Given bit vector node <code class="docutils literal notranslate"><span class="pre">b</span></code>, the value it represents is the
 number of bits by which node <code class="docutils literal notranslate"><span class="pre">a</span></code> is rotated to the left
@@ -1171,9 +1179,9 @@ number of bits by which node <code class="docutils literal notranslate"><span cl
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Ror">
-<code class="sig-name descname">Ror</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ror" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Ror</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ror" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a rotate right.</p>
 <p>Given bit vector node <code class="docutils literal notranslate"><span class="pre">b</span></code>, the value it represents is the
 number of bits by which node <code class="docutils literal notranslate"><span class="pre">a</span></code> is rotated to the right
@@ -1194,9 +1202,9 @@ number of bits by which node <code class="docutils literal notranslate"><span cl
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Saddo">
-<code class="sig-name descname">Saddo</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Saddo" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Saddo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Saddo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed bit vector addition overflow detection.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -1216,9 +1224,9 @@ number of bits by which node <code class="docutils literal notranslate"><span cl
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Sat">
-<code class="sig-name descname">Sat</code><span class="sig-paren">(</span><em class="sig-param">lod_limit = -1</em>, <em class="sig-param">sat_limit = -1</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sat" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Sat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lod_limit</span><span class="o">=</span><span class="default_value">- 1</span></em>, <em class="sig-param"><span class="n">sat_limit</span><span class="o">=</span><span class="default_value">- 1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Solve an input formula.</p>
 <p>An input formula is defined by constraints added via
 <a class="reference internal" href="#pyboolector.Boolector.Assert" title="pyboolector.Boolector.Assert"><code class="xref py py-func docutils literal notranslate"><span class="pre">Assert()</span></code></a>.
@@ -1252,9 +1260,9 @@ the underlying SAT solver (<code class="docutils literal notranslate"><span clas
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Sdiv">
-<code class="sig-name descname">Sdiv</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sdiv" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Sdiv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sdiv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed  bit vector division.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -1283,9 +1291,9 @@ depends on <a class="reference internal" href="#pyboolector.Boolector.Udiv" titl
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Sdivo">
-<code class="sig-name descname">Sdivo</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sdivo" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Sdivo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sdivo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed  bit vector division overflow detection.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).
@@ -1311,9 +1319,9 @@ represents -1.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Set_opt">
-<code class="sig-name descname">Set_opt</code><span class="sig-paren">(</span><em class="sig-param">opt</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Set_opt" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Set_opt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">opt</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Set_opt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set option.</p>
 <p>E.g., given a Boolector instance <code class="docutils literal notranslate"><span class="pre">btor</span></code>, model generation is enabled via</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">btor</span><span class="o">.</span><span class="n">Set_opt</span><span class="p">(</span><span class="n">BTOR_OPT_MODEL_GEN</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -1885,9 +1893,9 @@ resolution simplification.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Set_sat_solver">
-<code class="sig-name descname">Set_sat_solver</code><span class="sig-paren">(</span><em class="sig-param">solver</em>, <em class="sig-param">clone = True</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Set_sat_solver" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Set_sat_solver</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">solver</span></em>, <em class="sig-param"><span class="n">clone</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Set_sat_solver" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the SAT solver to use.</p>
 <p>E.g.,</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">btor</span> <span class="o">=</span> <span class="n">Boolector</span><span class="p">()</span>
@@ -1912,9 +1920,9 @@ impact on overall performance).</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Set_term">
-<code class="sig-name descname">Set_term</code><span class="sig-paren">(</span><em class="sig-param">fun</em>, <em class="sig-param">args</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Set_term" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Set_term</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fun</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Set_term" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set a termination callback function.</p>
 <p>Use this function to force Boolector to prematurely terminate if
 callback function <code class="docutils literal notranslate"><span class="pre">fun</span></code> returns True. Arguments <code class="docutils literal notranslate"><span class="pre">args</span></code> to
@@ -1951,9 +1959,9 @@ callback function <code class="docutils literal notranslate"><span class="pre">f
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Sext">
-<code class="sig-name descname">Sext</code><span class="sig-paren">(</span><em class="sig-param">n</em>, <em class="sig-param">width</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sext" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Sext</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">width</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sext" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create signed extension.</p>
 <p>Bit vector node <code class="docutils literal notranslate"><span class="pre">n</span></code> is padded with <code class="docutils literal notranslate"><span class="pre">width</span></code> bits, where the
 padded value depends on the value of the most significant bit
@@ -1974,9 +1982,9 @@ of node <code class="docutils literal notranslate"><span class="pre">n</span></c
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Sgt">
-<code class="sig-name descname">Sgt</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sgt" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Sgt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sgt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed greater than.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -1996,9 +2004,9 @@ of node <code class="docutils literal notranslate"><span class="pre">n</span></c
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Sgte">
-<code class="sig-name descname">Sgte</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sgte" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Sgte</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sgte" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed greater than or equal.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2018,7 +2026,7 @@ of node <code class="docutils literal notranslate"><span class="pre">n</span></c
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Simplify">
 <code class="sig-name descname">Simplify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Simplify" title="Permalink to this definition">¶</a></dt>
 <dd><p>Simplify current input formula.</p>
@@ -2034,9 +2042,9 @@ simplifies the input formula as a preprocessing step.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Slice">
-<code class="sig-name descname">Slice</code><span class="sig-paren">(</span><em class="sig-param">n</em>, <em class="sig-param">upper</em>, <em class="sig-param">lower</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Slice" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Slice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">upper</span></em>, <em class="sig-param"><span class="n">lower</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Slice" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector slice of node <code class="docutils literal notranslate"><span class="pre">n</span></code> from index <code class="docutils literal notranslate"><span class="pre">upper</span></code>
 to index <code class="docutils literal notranslate"><span class="pre">lower</span></code>.</p>
 <p>It is also possible to use Python slices on bit vectors as
@@ -2064,9 +2072,9 @@ follows:</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Sll">
-<code class="sig-name descname">Sll</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sll" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Sll</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sll" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a logical shift left.</p>
 <p>Given bit vector node <code class="docutils literal notranslate"><span class="pre">b</span></code>, the value it represents is the
 number of zeroes shifted into node <code class="docutils literal notranslate"><span class="pre">a</span></code> from the right
@@ -2092,9 +2100,9 @@ number of zeroes shifted into node <code class="docutils literal notranslate"><s
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Slt">
-<code class="sig-name descname">Slt</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Slt" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Slt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Slt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed less than.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2114,9 +2122,9 @@ number of zeroes shifted into node <code class="docutils literal notranslate"><s
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Slte">
-<code class="sig-name descname">Slte</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Slte" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Slte</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Slte" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed less than or equal.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2136,9 +2144,9 @@ number of zeroes shifted into node <code class="docutils literal notranslate"><s
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Smod">
-<code class="sig-name descname">Smod</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Smod" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Smod</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Smod" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed remainder where its sign matches the sign of the
 divisor.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
@@ -2161,9 +2169,9 @@ divisor.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Smulo">
-<code class="sig-name descname">Smulo</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Smulo" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Smulo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Smulo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed bit vector multiplication overflow detection.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2183,9 +2191,9 @@ divisor.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Sra">
-<code class="sig-name descname">Sra</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sra" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Sra</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sra" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an arithmetic shift right.</p>
 <p>Analogously to <a class="reference internal" href="#pyboolector.Boolector.Srl" title="pyboolector.Boolector.Srl"><code class="xref py py-func docutils literal notranslate"><span class="pre">Srl()</span></code></a>, but whether
 zeroes or ones are shifted in depends on the most significant
@@ -2206,9 +2214,9 @@ bit of node <code class="docutils literal notranslate"><span class="pre">a</span
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Srem">
-<code class="sig-name descname">Srem</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Srem" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Srem</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Srem" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed remainder.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).
@@ -2235,9 +2243,9 @@ Hence, in case that <code class="docutils literal notranslate"><span class="pre"
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Srl">
-<code class="sig-name descname">Srl</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Srl" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Srl</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Srl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a logical shift right.</p>
 <p>Given bit vector node <code class="docutils literal notranslate"><span class="pre">b</span></code>, the value it represents is the
 number of zeroes shifted into node <code class="docutils literal notranslate"><span class="pre">a</span></code> from the left
@@ -2263,9 +2271,9 @@ number of zeroes shifted into node <code class="docutils literal notranslate"><s
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Ssubo">
-<code class="sig-name descname">Ssubo</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ssubo" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Ssubo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ssubo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a signed  bit vector subtraction overflow detection.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2285,9 +2293,9 @@ number of zeroes shifted into node <code class="docutils literal notranslate"><s
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Sub">
-<code class="sig-name descname">Sub</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sub" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Sub</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Sub" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector subtraction.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2312,7 +2320,7 @@ number of zeroes shifted into node <code class="docutils literal notranslate"><s
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Terminate">
 <code class="sig-name descname">Terminate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Terminate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine if Boolector has been terminated (and/or terminate
@@ -2323,9 +2331,9 @@ function.</p>
 :rtype: bool</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.UF">
-<code class="sig-name descname">UF</code><span class="sig-paren">(</span><em class="sig-param">sort</em>, <em class="sig-param">symbol</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.UF" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">UF</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sort</span></em>, <em class="sig-param"><span class="n">symbol</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.UF" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an uninterpreted function with sort <code class="docutils literal notranslate"><span class="pre">sort</span></code> and symbol
 <code class="docutils literal notranslate"><span class="pre">symbol</span></code>.</p>
 <p>An uninterpreted function’s symbol is used as a simple means of
@@ -2360,9 +2368,9 @@ call to this function returns a fresh uninterpreted function.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Uaddo">
-<code class="sig-name descname">Uaddo</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Uaddo" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Uaddo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Uaddo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an unsigned  bit vector addition overflow detection.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2382,13 +2390,13 @@ call to this function returns a fresh uninterpreted function.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Udiv">
-<code class="sig-name descname">Udiv</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Udiv" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Udiv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Udiv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an unsigned  bit vector division.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).
-If <code class="docutils literal notranslate"><span class="pre">a</span></code> is 0, the division’s result is -1.</p>
+If <code class="docutils literal notranslate"><span class="pre">b</span></code> is 0, the division’s result is -1.</p>
 <p>It is also possible to create an unsigned division as follows
 (see <a class="reference internal" href="pyboolector.html#operator-overloading"><span class="std std-ref">Python Operator Overloading</span></a>):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bvudiv</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
@@ -2418,9 +2426,9 @@ uninterpreted and consequently returns a result.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Uext">
-<code class="sig-name descname">Uext</code><span class="sig-paren">(</span><em class="sig-param">n</em>, <em class="sig-param">width</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Uext" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Uext</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">width</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Uext" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create unsigned extension.</p>
 <p>Bit vector node <code class="docutils literal notranslate"><span class="pre">n</span></code> is padded with <code class="docutils literal notranslate"><span class="pre">width</span></code> zeroes.</p>
 <dl class="field-list simple">
@@ -2439,9 +2447,9 @@ uninterpreted and consequently returns a result.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Ugt">
-<code class="sig-name descname">Ugt</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ugt" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Ugt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ugt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an unsigned greater than.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2466,9 +2474,9 @@ uninterpreted and consequently returns a result.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Ugte">
-<code class="sig-name descname">Ugte</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ugte" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Ugte</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ugte" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an unsigned greater than or equal.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2493,9 +2501,9 @@ follows (see <a class="reference internal" href="pyboolector.html#operator-overl
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Ult">
-<code class="sig-name descname">Ult</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ult" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Ult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ult" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an unsigned less than.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2520,9 +2528,9 @@ follows (see <a class="reference internal" href="pyboolector.html#operator-overl
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Ulte">
-<code class="sig-name descname">Ulte</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ulte" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Ulte</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Ulte" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an unsigned less than or equal.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2547,9 +2555,9 @@ follows (see <a class="reference internal" href="pyboolector.html#operator-overl
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Umulo">
-<code class="sig-name descname">Umulo</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Umulo" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Umulo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Umulo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an unsigned  bit vector multiplication overflow detection.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2569,9 +2577,9 @@ follows (see <a class="reference internal" href="pyboolector.html#operator-overl
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Urem">
-<code class="sig-name descname">Urem</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Urem" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Urem</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Urem" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an unsigned remainder.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).
@@ -2605,9 +2613,9 @@ can not be uninterpreted.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Usubo">
-<code class="sig-name descname">Usubo</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Usubo" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Usubo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Usubo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an unsigned  bit vector subtraction overflow detection.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2627,9 +2635,9 @@ can not be uninterpreted.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Var">
-<code class="sig-name descname">Var</code><span class="sig-paren">(</span><em class="sig-param">sort</em>, <em class="sig-param">symbol = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Var" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Var</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sort</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Var" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector variable of sort <code class="docutils literal notranslate"><span class="pre">sort</span></code>.</p>
 <p>A variable’s symbol is used as a simple means of identification,
 either when printing a model via
@@ -2661,9 +2669,22 @@ function returns a fresh bit vector variable.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
+<dt id="pyboolector.Boolector.Version">
+<code class="sig-name descname">Version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Version" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The version number.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pyboolector.Boolector.Write">
-<code class="sig-name descname">Write</code><span class="sig-paren">(</span><em class="sig-param">array</em>, <em class="sig-param">index</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Write" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">array</span></em>, <em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Write" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a write on array <code class="docutils literal notranslate"><span class="pre">array</span></code> at position <code class="docutils literal notranslate"><span class="pre">index</span></code> with value
 <code class="docutils literal notranslate"><span class="pre">value</span></code> (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
 <p>The array is updated at exactly one position, all other elements
@@ -2689,9 +2710,9 @@ the elements of <code class="docutils literal notranslate"><span class="pre">arr
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Xnor">
-<code class="sig-name descname">Xnor</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Xnor" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Xnor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Xnor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector <em>xnor</em>.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2711,9 +2732,9 @@ the elements of <code class="docutils literal notranslate"><span class="pre">arr
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pyboolector.Boolector.Xor">
-<code class="sig-name descname">Xor</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Xor" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Xor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.Boolector.Xor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a bit vector <em>xor</em>.</p>
 <p>Parameters <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> must have the same bit width
 (see <a class="reference internal" href="pyboolector.html#const-conversion"><span class="std std-ref">Automatic Constant Conversion</span></a>).</p>
@@ -2740,12 +2761,12 @@ the elements of <code class="docutils literal notranslate"><span class="pre">arr
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyboolector.BoolectorArrayNode">
 <em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorArrayNode</code><a class="headerlink" href="#pyboolector.BoolectorArrayNode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pyboolector.BoolectorNode" title="pyboolector.BoolectorNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyboolector.BoolectorNode</span></code></a></p>
 <p>The class representing a Boolector array node.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyboolector.BoolectorArrayNode.index_width">
 <code class="sig-name descname">index_width</code><a class="headerlink" href="#pyboolector.BoolectorArrayNode.index_width" title="Permalink to this definition">¶</a></dt>
 <dd><p>The bit with of the Boolector array node indices.</p>
@@ -2753,19 +2774,19 @@ the elements of <code class="docutils literal notranslate"><span class="pre">arr
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyboolector.BoolectorBVNode">
 <em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorBVNode</code><a class="headerlink" href="#pyboolector.BoolectorBVNode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pyboolector.BoolectorNode" title="pyboolector.BoolectorNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyboolector.BoolectorNode</span></code></a></p>
 <p>The class representing a Boolector bit vector node.</p>
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyboolector.BoolectorConstNode">
 <em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorConstNode</code><a class="headerlink" href="#pyboolector.BoolectorConstNode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pyboolector.BoolectorBVNode" title="pyboolector.BoolectorBVNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyboolector.BoolectorBVNode</span></code></a></p>
 <p>The class representing Boolector constant nodes.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyboolector.BoolectorConstNode.bits">
 <code class="sig-name descname">bits</code><a class="headerlink" href="#pyboolector.BoolectorConstNode.bits" title="Permalink to this definition">¶</a></dt>
 <dd><p>The bit string of a Boolector constant node.</p>
@@ -2773,33 +2794,33 @@ the elements of <code class="docutils literal notranslate"><span class="pre">arr
 
 </dd></dl>
 
-<dl class="exception">
+<dl class="py exception">
 <dt id="pyboolector.BoolectorException">
-<em class="property">exception </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorException</code><a class="headerlink" href="#pyboolector.BoolectorException" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorException</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.BoolectorException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.8/library/exceptions.html#Exception" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
 <p>The class representing a Boolector exception.</p>
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyboolector.BoolectorExistsNode">
 <em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorExistsNode</code><a class="headerlink" href="#pyboolector.BoolectorExistsNode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pyboolector.BoolectorQuantNode" title="pyboolector.BoolectorQuantNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyboolector.BoolectorQuantNode</span></code></a></p>
 <p>The class representing a Boolector existentially quantified node.</p>
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyboolector.BoolectorForallNode">
 <em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorForallNode</code><a class="headerlink" href="#pyboolector.BoolectorForallNode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pyboolector.BoolectorQuantNode" title="pyboolector.BoolectorQuantNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyboolector.BoolectorQuantNode</span></code></a></p>
 <p>The class representing a Boolector universally quantified node.</p>
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pyboolector.BoolectorFunNode">
 <em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorFunNode</code><a class="headerlink" href="#pyboolector.BoolectorFunNode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pyboolector.BoolectorNode" title="pyboolector.BoolectorNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyboolector.BoolectorNode</span></code></a></p>
 <p>The class representing a Boolector function node.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyboolector.BoolectorFunNode.arity">
 <code class="sig-name descname">arity</code><a class="headerlink" href="#pyboolector.BoolectorFunNode.arity" title="Permalink to this definition">¶</a></dt>
 <dd><p>The arity of a Boolector function node.</p>
@@ -2807,14 +2828,116 @@ the elements of <code class="docutils literal notranslate"><span class="pre">arr
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
+<dt id="pyboolector.BoolectorOpt">
+<em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorOpt</code><a class="headerlink" href="#pyboolector.BoolectorOpt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.8/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The class representing a Boolector option.</p>
+<dl class="py attribute">
+<dt id="pyboolector.BoolectorOpt.desc">
+<code class="sig-name descname">desc</code><a class="headerlink" href="#pyboolector.BoolectorOpt.desc" title="Permalink to this definition">¶</a></dt>
+<dd><p>The description of a Boolector option.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pyboolector.BoolectorOpt.dflt">
+<code class="sig-name descname">dflt</code><a class="headerlink" href="#pyboolector.BoolectorOpt.dflt" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default value of a Boolector option.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pyboolector.BoolectorOpt.lng">
+<code class="sig-name descname">lng</code><a class="headerlink" href="#pyboolector.BoolectorOpt.lng" title="Permalink to this definition">¶</a></dt>
+<dd><p>The long name of a Boolector option.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pyboolector.BoolectorOpt.max">
+<code class="sig-name descname">max</code><a class="headerlink" href="#pyboolector.BoolectorOpt.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum value of a Boolector option.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pyboolector.BoolectorOpt.min">
+<code class="sig-name descname">min</code><a class="headerlink" href="#pyboolector.BoolectorOpt.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>The minimum value of a Boolector option.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pyboolector.BoolectorOpt.shrt">
+<code class="sig-name descname">shrt</code><a class="headerlink" href="#pyboolector.BoolectorOpt.shrt" title="Permalink to this definition">¶</a></dt>
+<dd><p>The short name of a Boolector option.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pyboolector.BoolectorOpt.val">
+<code class="sig-name descname">val</code><a class="headerlink" href="#pyboolector.BoolectorOpt.val" title="Permalink to this definition">¶</a></dt>
+<dd><p>The current value of a Boolector option.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyboolector.BoolectorOptions">
+<em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorOptions</code><a class="headerlink" href="#pyboolector.BoolectorOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.8/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The class representing a Boolector option iterator (see
+<a class="reference internal" href="#pyboolector.Boolector.Options" title="pyboolector.Boolector.Options"><code class="xref py py-func docutils literal notranslate"><span class="pre">Options()</span></code></a>).</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyboolector.BoolectorQuantNode">
+<em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorQuantNode</code><a class="headerlink" href="#pyboolector.BoolectorQuantNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyboolector.BoolectorBVNode" title="pyboolector.BoolectorBVNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyboolector.BoolectorBVNode</span></code></a></p>
+<p>The class representing a Boolector quantified node.</p>
+<dl class="py method">
+<dt id="pyboolector.BoolectorQuantNode.is_exists">
+<code class="sig-name descname">is_exists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.BoolectorQuantNode.is_exists" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if node is an existential quantifier.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyboolector.BoolectorQuantNode.is_forall">
+<code class="sig-name descname">is_forall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.BoolectorQuantNode.is_forall" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if node is a universal quantifier.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyboolector.BoolectorSort">
+<em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorSort</code><a class="headerlink" href="#pyboolector.BoolectorSort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.8/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The class representing a Boolector sort.</p>
+</dd></dl>
+
+<dl class="py class">
 <dt id="pyboolector.BoolectorNode">
 <em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorNode</code><a class="headerlink" href="#pyboolector.BoolectorNode" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.8/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>The class representing a Boolector node.</p>
-<dl class="method">
+<dd><p>The class representing a Boolector node.</p>
+<dl class="py attribute">
+<dt id="pyboolector.BoolectorNode.btor">
+<code class="sig-name descname">btor</code><a class="headerlink" href="#pyboolector.BoolectorNode.btor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Boolector instance this node is associated with.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pyboolector.BoolectorNode.Dump">
-<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><em class="sig-param">format = &quot;btor&quot;</em>, <em class="sig-param">outfile = None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.BoolectorNode.Dump" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">format</span><span class="o">=</span><span class="default_value">'btor'</span></em>, <em class="sig-param"><span class="n">outfile</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyboolector.BoolectorNode.Dump" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dump node to output file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2826,7 +2949,7 @@ the elements of <code class="docutils literal notranslate"><span class="pre">arr
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyboolector.BoolectorNode.assignment">
 <code class="sig-name descname">assignment</code><a class="headerlink" href="#pyboolector.BoolectorNode.assignment" title="Permalink to this definition">¶</a></dt>
 <dd><p>The assignment of a Boolector node.</p>
@@ -2841,7 +2964,7 @@ If it is a function, its assignment is represented as a list
 of tuples <code class="docutils literal notranslate"><span class="pre">(arg_0,</span> <span class="pre">...,</span> <span class="pre">arg_n,</span> <span class="pre">value)</span></code>.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyboolector.BoolectorNode.symbol">
 <code class="sig-name descname">symbol</code><a class="headerlink" href="#pyboolector.BoolectorNode.symbol" title="Permalink to this definition">¶</a></dt>
 <dd><p>The symbol of a Boolector node.</p>
@@ -2852,7 +2975,7 @@ or generating file dumps via
 <a class="reference internal" href="#pyboolector.Boolector.Dump" title="pyboolector.Boolector.Dump"><code class="xref py py-func docutils literal notranslate"><span class="pre">Dump()</span></code></a>.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pyboolector.BoolectorNode.width">
 <code class="sig-name descname">width</code><a class="headerlink" href="#pyboolector.BoolectorNode.width" title="Permalink to this definition">¶</a></dt>
 <dd><p>The bit width of a Boolector node.</p>
@@ -2864,81 +2987,31 @@ this indicates the bit with of the function’s return value.</p>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="pyboolector.BoolectorOpt">
-<em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorOpt</code><a class="headerlink" href="#pyboolector.BoolectorOpt" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.8/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>The class representing a Boolector option.</p>
-<dl class="attribute">
-<dt id="pyboolector.BoolectorOpt.desc">
-<code class="sig-name descname">desc</code><a class="headerlink" href="#pyboolector.BoolectorOpt.desc" title="Permalink to this definition">¶</a></dt>
-<dd><p>The description of a Boolector option.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pyboolector.BoolectorOpt.dflt">
-<code class="sig-name descname">dflt</code><a class="headerlink" href="#pyboolector.BoolectorOpt.dflt" title="Permalink to this definition">¶</a></dt>
-<dd><p>The default value of a Boolector option.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pyboolector.BoolectorOpt.lng">
-<code class="sig-name descname">lng</code><a class="headerlink" href="#pyboolector.BoolectorOpt.lng" title="Permalink to this definition">¶</a></dt>
-<dd><p>The long name of a Boolector option.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pyboolector.BoolectorOpt.max">
-<code class="sig-name descname">max</code><a class="headerlink" href="#pyboolector.BoolectorOpt.max" title="Permalink to this definition">¶</a></dt>
-<dd><p>The maximum value of a Boolector option.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pyboolector.BoolectorOpt.min">
-<code class="sig-name descname">min</code><a class="headerlink" href="#pyboolector.BoolectorOpt.min" title="Permalink to this definition">¶</a></dt>
-<dd><p>The minimum value of a Boolector option.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pyboolector.BoolectorOpt.shrt">
-<code class="sig-name descname">shrt</code><a class="headerlink" href="#pyboolector.BoolectorOpt.shrt" title="Permalink to this definition">¶</a></dt>
-<dd><p>The short name of a Boolector option.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="pyboolector.BoolectorOpt.val">
-<code class="sig-name descname">val</code><a class="headerlink" href="#pyboolector.BoolectorOpt.val" title="Permalink to this definition">¶</a></dt>
-<dd><p>The current value of a Boolector option.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="pyboolector.BoolectorOptions">
-<em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorOptions</code><a class="headerlink" href="#pyboolector.BoolectorOptions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.8/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>The class representing a Boolector option iterator (see
-<a class="reference internal" href="#pyboolector.Boolector.Options" title="pyboolector.Boolector.Options"><code class="xref py py-func docutils literal notranslate"><span class="pre">Options()</span></code></a>).</p>
-</dd></dl>
-
-<dl class="class">
-<dt id="pyboolector.BoolectorQuantNode">
-<em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorQuantNode</code><a class="headerlink" href="#pyboolector.BoolectorQuantNode" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#pyboolector.BoolectorBVNode" title="pyboolector.BoolectorBVNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyboolector.BoolectorBVNode</span></code></a></p>
-<p>The class representing a Boolector quantified node.</p>
-</dd></dl>
-
-<dl class="class">
-<dt id="pyboolector.BoolectorSort">
-<em class="property">class </em><code class="sig-prename descclassname">pyboolector.</code><code class="sig-name descname">BoolectorSort</code><a class="headerlink" href="#pyboolector.BoolectorSort" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.8/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>The class representing a Boolector sort.</p>
-</dd></dl>
-
 </div>
 
 
+            <div class="clearer"></div>
           </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pyboolector.html"
+                        title="previous chapter">Boolector Python API documentation</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pyboolector_options.html"
+                        title="next chapter">Boolector Options</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -2955,13 +3028,14 @@ this indicates the bit with of the function’s return value.</p>
         <li class="right" >
           <a href="pyboolector.html" title="Boolector Python API documentation"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.0 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="pyboolector.html" >Boolector Python API documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="pyboolector.html" >Boolector Python API documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Module Index: pyboolector</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2007-2020 The authors of Boolector.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>
