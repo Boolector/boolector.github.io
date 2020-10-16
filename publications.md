@@ -156,7 +156,7 @@ In Journal of Satisfiability, Boolean Modeling and Computation (JSAT),
 volume 9, 2015, pages 53-58.
 <br/>
 `[`[PDF](http://fmv.jku.at/papers/NiemetzPreinerBiere-JSAT15.pdf)`]`
-`[`[BibTex](https://dblp.org/rec/journals/jsat/NiemetzPB14.html?view=bibtex)
+`[`[BibTex](https://dblp.org/rec/journals/jsat/NiemetzPB14.html?view=bibtex)`]`
 
 Aina Niemetz, Mathias Preiner, Armin Biere.
 [Turbo-Charging Lemmas on Demand with Don't Care Reasoning](https://cs.stanford.edu/people/niemetz/files/publications/2014/NiemetzPreinerBiere-FMCAD14.pdf).
