@@ -7,14 +7,20 @@ in JSAT volum 9 ([BibTex](http://fmv.jku.at/papers/NiemetzPreinerBiere-JSAT15.bi
 as listed below:
 
 ```
-@article{NiemetzPreinerBiere-JSAT15,
-  title     = {Boolector 2.0 system description},
-  author    = {Aina Niemetz and Mathias Preiner and Armin Biere},
-  journal   = {Journal on Satisfiability, Boolean Modeling and Computation},
+@article{DBLP:journals/jsat/NiemetzPB14,
+  author    = {Aina Niemetz and
+               Mathias Preiner and
+               Armin Biere},
+  title     = {Boolector 2.0},
+  journal   = {J. Satisf. Boolean Model. Comput.},
   volume    = {9},
-  pages     = {53-58},
-  year      = {2014 (published 2015)},
-  publisher = {IOS Press},
+  number    = {1},
+  pages     = {53--58},
+  year      = {2014},
+  url       = {https://doi.org/10.3233/sat190101},
+  doi       = {10.3233/sat190101},
+  biburl    = {https://dblp.org/rec/journals/jsat/NiemetzPB14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
 
