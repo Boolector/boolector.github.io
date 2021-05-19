@@ -32,7 +32,8 @@
 
 ## Download
 
-[boolector-3.1.0](https://github.com/Boolector/boolector/releases/tag/3.1.0)
+Get the latest release from
+[GitHub](https://github.com/Boolector/boolector/releases).
 
 ## Documentation
 
