@@ -34,8 +34,13 @@
           <a href="/contrib.html"><b>Third Party Contributions</b></a><br/>
         </p>
 
-        {{ "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" | markdownify }}
-        {{ "[![Build Status](https://travis-ci.org/Boolector/boolector.svg?branch=master)](https://travis-ci.org/Boolector/boolector)" | markdownify }}
+        <p>
+          <a href="https://opensource.org/licenses/MIT">
+            <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"/>
+          </a>
+          <br/>
+          <img src="https://dev.azure.com/Boolector/Boolector/_apis/build/status/Boolector.boolector?branchName=master" alt="CI"/>
+        </p>
 
         {% if site.show_downloads %}
         <ul class="downloads">

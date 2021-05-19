@@ -3,11 +3,15 @@
 
 @import "{{ site.theme }}";
 
+a {
+  color: #999900;
+}
+
 a:hover, a:focus {
-  color:#729a2d;
+  color:#99cc00;
   font-weight: inherit;
 }
 
 .hl {
-  color:#729a2d;
+  color:#99cc00;
 }
