@@ -535,9 +535,9 @@ nodes.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If Lingeling is used as SAT solver, Boolector can be cloned at any time,
-since Lingeling also supports cloning. However, if you use <a class="reference internal" href="#c.boolector_clone" title="boolector_clone"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_clone()</span></code></a>
-with MiniSAT or PicoSAT (no cloning support), Boolector can only be cloned
-prior to the first <a class="reference internal" href="#c.boolector_sat" title="boolector_sat"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_sat()</span></code></a> call.</p>
+since Lingeling also supports cloning. However, with all other SAT solver
+that do not support cloning, Boolector can only be cloned prior to the
+first <a class="reference internal" href="#c.boolector_sat" title="boolector_sat"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_sat()</span></code></a> call.</p>
 </div>
 </dd></dl>
 
@@ -794,21 +794,6 @@ have been opened by the user before.</p></li>
 </dd></dl>
 
 <dl class="c function">
-<dt id="c.boolector_dump_btor2">
-void <code class="sig-name descname">boolector_dump_btor2</code><span class="sig-paren">(</span>Btor *<em>btor</em>, FILE *<em>file</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_dump_btor2" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Dump formula to file in BTOR 2.0 format.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>btor</strong> – Boolector instance.</p></li>
-<li><p><strong>file</strong> – File to which the formula should be dumped. The file must be
-have been opened by the user before.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="c function">
 <dt id="c.boolector_dump_btor_node">
 void <code class="sig-name descname">boolector_dump_btor_node</code><span class="sig-paren">(</span>Btor *<em>btor</em>, FILE *<em>file</em>, BoolectorNode *<em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_dump_btor_node" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Recursively dump <code class="docutils literal notranslate"><span class="pre">node</span></code> to file in <a class="reference external" href="http://fmv.jku.at/papers/BrummayerBiereLonsing-BPR08.pdf">BTOR</a> format.</p>
@@ -877,7 +862,7 @@ of the same type.</p>
 <dl class="c function">
 <dt id="c.boolector_exists">
 BoolectorNode *<code class="sig-name descname">boolector_exists</code><span class="sig-paren">(</span>Btor *<em>btor</em>, BoolectorNode *<em>param</em>[], uint32_t <em>paramc</em>, BoolectorNode *<em>body</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_exists" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Create an existentially quantifed term.</p>
+<dd><p>Create an existentially quantifed formula.</p>
 <p>exists (params[0] … params[paramc - 1]) body</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -889,7 +874,7 @@ BoolectorNode *<code class="sig-name descname">boolector_exists</code><span clas
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Existentially quantified term with bit width 1.</p>
+<dd class="field-even"><p>Existentially quantified formula.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -979,7 +964,7 @@ void <code class="sig-name descname">boolector_fixate_assumptions</code><span cl
 <dl class="c function">
 <dt id="c.boolector_forall">
 BoolectorNode *<code class="sig-name descname">boolector_forall</code><span class="sig-paren">(</span>Btor *<em>btor</em>, BoolectorNode *<em>params</em>[], uint32_t <em>paramc</em>, BoolectorNode *<em>body</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_forall" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Create a universally quantified term.</p>
+<dd><p>Create a universally quantified formula.</p>
 <p>forall (params[0] … params[paramc - 1]) body</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -991,7 +976,7 @@ BoolectorNode *<code class="sig-name descname">boolector_forall</code><span clas
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Universally quantified term with bit width 1.</p>
+<dd class="field-even"><p>Universally quantified formula.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1661,7 +1646,7 @@ bool <code class="sig-name descname">boolector_is_array_sort</code><span class="
 <dl class="c function">
 <dt id="c.boolector_is_array_var">
 bool <code class="sig-name descname">boolector_is_array_var</code><span class="sig-paren">(</span>Btor *<em>btor</em>, BoolectorNode *<em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_is_array_var" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Determine if expression is an array variable.</p>
+<dd><p>Determine if given node is an array variable.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -1938,7 +1923,7 @@ Otherwise, this function can only be called once.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>btor</strong> – Boolector instance.</p></li>
-<li><p><strong>lod_limit</strong> – Limit for lemmas on demand (-1 unlimited).</p></li>
+<li><p><strong>lod_limit</strong> – Lemma limit (-1 unlimited).</p></li>
 <li><p><strong>sat_limit</strong> – Conflict limit for SAT solver (-1 unlimited).</p></li>
 </ul>
 </dd>
@@ -2076,7 +2061,7 @@ of sort <code class="docutils literal notranslate"><span class="pre">sort</span>
 <dl class="c function">
 <dt id="c.boolector_mul">
 BoolectorNode *<code class="sig-name descname">boolector_mul</code><span class="sig-paren">(</span>Btor *<em>btor</em>, BoolectorNode *<em>n0</em>, BoolectorNode *<em>n1</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_mul" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Create a bitvector multiplication.</p>
+<dd><p>Create a bit-vector multiplication.</p>
 <p>The parameters <code class="docutils literal notranslate"><span class="pre">n0</span></code> and <code class="docutils literal notranslate"><span class="pre">n1</span></code> must have the same bit width.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

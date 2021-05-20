@@ -199,12 +199,12 @@
 <h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>First, we create a Boolector instance:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Create Boolector instance</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="n">Btor</span> <span class="o">*</span><span class="n">btor</span> <span class="o">=</span> <span class="n">boolector_new</span> <span class="p">();</span>
 </pre></div>
 </div>
 <p>We can configure this instance via <a class="reference internal" href="cboolector_index.html#c.boolector_set_opt" title="boolector_set_opt"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_set_opt()</span></code></a>
 For example, if we want to enable model generation:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Enable model generation</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="n">boolector_set_opt</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">BTOR_OPT_MODEL_GEN</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>For a detailed description of all configurable options, see
@@ -257,12 +257,11 @@ satisfiable or unsatisfiable), that status is stored in <code class="docutils li
 We encode it with bit-vectors of size 8, and to preserve semantics,
 we have to ensure that the multiplication does not overflow.</p>
 <p>We first generate a bit-vector sort of size 8.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Create bit-vector sort of size 8</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="n">BoolectorSort</span> <span class="n">bvsort8</span> <span class="o">=</span> <span class="n">boolector_bitvec_sort</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Then, we generate and assert the following expressions:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Create expressions</span>
-  <span class="n">BoolectorNode</span> <span class="o">*</span><span class="n">x</span>       <span class="o">=</span> <span class="n">boolector_var</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">bvsort8</span><span class="p">,</span> <span class="s">&quot;x&quot;</span><span class="p">);</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="n">BoolectorNode</span> <span class="o">*</span><span class="n">x</span>       <span class="o">=</span> <span class="n">boolector_var</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">bvsort8</span><span class="p">,</span> <span class="s">&quot;x&quot;</span><span class="p">);</span>
   <span class="n">BoolectorNode</span> <span class="o">*</span><span class="n">y</span>       <span class="o">=</span> <span class="n">boolector_var</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">bvsort8</span><span class="p">,</span> <span class="s">&quot;y&quot;</span><span class="p">);</span>
   <span class="n">BoolectorNode</span> <span class="o">*</span><span class="n">zero</span>    <span class="o">=</span> <span class="n">boolector_zero</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">bvsort8</span><span class="p">);</span>
   <span class="n">BoolectorNode</span> <span class="o">*</span><span class="n">hundred</span> <span class="o">=</span> <span class="n">boolector_int</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">bvsort8</span><span class="p">);</span>
@@ -291,11 +290,12 @@ we have to ensure that the multiplication does not overflow.</p>
   <span class="n">boolector_assert</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">ult</span><span class="p">);</span>
   <span class="n">BoolectorNode</span> <span class="o">*</span><span class="n">umulo</span>  <span class="o">=</span> <span class="n">boolector_umulo</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
   <span class="n">BoolectorNode</span> <span class="o">*</span><span class="n">numulo</span> <span class="o">=</span> <span class="n">boolector_not</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">umulo</span><span class="p">);</span>  <span class="c1">// prevent overflow</span>
+  <span class="n">boolector_assert</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">numulo</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The satisfiability of the resulting formula can be determined via
 <a class="reference internal" href="cboolector_index.html#c.boolector_sat" title="boolector_sat"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_sat()</span></code></a>.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">boolector_sat</span> <span class="p">(</span><span class="n">btor</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>If the resulting formula is satisfiable and model generation has been enabled
@@ -312,14 +312,14 @@ the assignment of any arbitrary expression.</p>
 <p>The example above is satisfiable, and we can now either query the assignments
 of variables <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> or print the resulting model via
 <a class="reference internal" href="cboolector_index.html#c.boolector_print_model" title="boolector_print_model"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_print_model()</span></code></a>.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>
-  <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">xstr</span> <span class="o">=</span> <span class="n">boolector_bv_assignment</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>  <span class="c1">// returns &quot;00000100&quot;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">xstr</span> <span class="o">=</span> <span class="n">boolector_bv_assignment</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>  <span class="c1">// returns &quot;00000100&quot;</span>
+  <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">ystr</span> <span class="o">=</span> <span class="n">boolector_bv_assignment</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>  <span class="c1">// returns &quot;00010101&quot;</span>
 </pre></div>
 </div>
 <p>Boolector supports printing models in its own format (“btor”) or in
 <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.0-r12.09.09.pdf">SMT-LIB v2</a> format (“smt2”). We print the resulting model in <a class="reference external" href="http://fmv.jku.at/papers/BrummayerBiereLonsing-BPR08.pdf">BTOR</a>
 format:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Print model in BTOR format:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="n">boolector_print_model</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="s">&quot;btor&quot;</span><span class="p">,</span> <span class="n">stdout</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>A possible model is shown below and gives the assignments of bit vector
@@ -335,10 +335,10 @@ certain index are indicated as follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span><span class="p">[</span><span class="mi">00</span><span class="p">]</span> <span class="mi">01</span> <span class="n">A</span>
 </pre></div>
 </div>
-<p>Here, A has id 4 and is an array with index and element bit width of 2,
-and its value at index 0 is 1.</p>
+<p>Here, array <code class="docutils literal notranslate"><span class="pre">A</span></code> has id 4 with index and element bit width of 2, and its
+value at index 0 is 1.</p>
 <p>We now print the model of the example above in <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.0-r12.09.09.pdf">SMT-LIB v2</a> format.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Print model in SMT-LIBv2 format:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="n">boolector_print_model</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="s">&quot;smt2&quot;</span><span class="p">,</span> <span class="n">stdout</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>A possible model is shown below:</p>
@@ -360,8 +360,7 @@ Queried assignment strings have to be freed via
 <a class="reference internal" href="cboolector_index.html#c.boolector_free_bv_assignment" title="boolector_free_bv_assignment"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_free_bv_assignment()</span></code></a>,
 <a class="reference internal" href="cboolector_index.html#c.boolector_free_array_assignment" title="boolector_free_array_assignment"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_free_array_assignment()</span></code></a> and
 <a class="reference internal" href="cboolector_index.html#c.boolector_free_uf_assignment" title="boolector_free_uf_assignment"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_free_uf_assignment()</span></code></a>.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>
-  <span class="c1">// Release expressions</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Release expressions</span>
   <span class="n">boolector_release</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
   <span class="n">boolector_release</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
   <span class="n">boolector_release</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">zero</span><span class="p">);</span>
@@ -383,6 +382,7 @@ Queried assignment strings have to be freed via
   <span class="n">boolector_release_sort</span> <span class="p">(</span><span class="n">btor</span><span class="p">,</span> <span class="n">bvsort8</span><span class="p">);</span>
 
   <span class="c1">// Delete Boolector instance</span>
+  <span class="n">boolector_delete</span> <span class="p">(</span><span class="n">btor</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The source code of the example above can be found at <a class="reference external" href="https://github.com/boolector/boolector/tree/master/examples/api/c/quickstart.c">examples/api/c/quickstart.c</a>.</p>
