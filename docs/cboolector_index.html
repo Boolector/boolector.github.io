@@ -1,45 +1,179 @@
 
-<!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C Interface &#8212; Boolector 3.2.1 documentation</title>
-    <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
-    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
-    <script src="static/jquery.js"></script>
-    <script src="static/underscore.js"></script>
-    <script src="static/doctools.js"></script>
-    <script src="static/language_data.js"></script>
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>C Interface &mdash; Boolector 3.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script src="static/jquery.js"></script>
+        <script src="static/underscore.js"></script>
+        <script src="static/doctools.js"></script>
+    
+    <script type="text/javascript" src="static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Boolector Options" href="cboolector_options.html" />
     <link rel="prev" title="Boolector C API documentation" href="cboolector.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="cboolector_options.html" title="Boolector Options"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="cboolector.html" title="Boolector C API documentation"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.1 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="cboolector.html" accesskey="U">Boolector C API documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">C Interface</a></li> 
-      </ul>
-    </div>  
+</head>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Boolector
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.2.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cboolector.html">Boolector C API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cboolector.html#interface">Interface</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">C Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#macros">Macros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#typedefs">Typedefs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deprecated">Deprecated</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cboolector.html#quickstart">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cboolector.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cboolector.html#internals">Internals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cboolector.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyboolector.html">Boolector Python API documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Boolector</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="cboolector.html">Boolector C API documentation</a> &raquo;</li>
+        
+      <li>C Interface</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="c-interface">
 <h1>C Interface<a class="headerlink" href="#c-interface" title="Permalink to this headline">¶</a></h1>
@@ -1390,7 +1524,7 @@ return value.</p>
 
 <dl class="c function">
 <dt id="c.boolector_has_opt">
-bool <code class="sig-name descname">boolector_has_opt</code><span class="sig-paren">(</span>Btor *<em>Btor</em>, BtorOption <em>opt</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_has_opt" title="Permalink to this definition">¶</a><br /></dt>
+bool <code class="sig-name descname">boolector_has_opt</code><span class="sig-paren">(</span><a class="reference internal" href="#c.boolector_has_opt" title="Btor">Btor</a> *<em>Btor</em>, BtorOption <em>opt</em><span class="sig-paren">)</span><a class="headerlink" href="#c.boolector_has_opt" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Check if Boolector has a given option.</p>
 <p>Given a Boolector instance <code class="docutils literal notranslate"><span class="pre">btor</span></code>, you can use this in combination
 with <a class="reference internal" href="#c.boolector_has_opt" title="boolector_has_opt"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_has_opt()</span></code></a> and <a class="reference internal" href="#c.boolector_next_opt" title="boolector_next_opt"><code class="xref c c-func docutils literal notranslate"><span class="pre">boolector_next_opt()</span></code></a> in order to iterate over
@@ -2192,11 +2326,11 @@ like e.g.  ‘check-sat’ in <a class="reference external" href="http://smtlib.
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>In the incremental case or in case of SMT-LIB v2 (which requires a
-‘check-sat’ command), the function returns either <a class="reference internal" href="#c.BOOLECTOR_SAT" title="BOOLECTOR_SAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_SAT</span></code></a>,
-<a class="reference internal" href="#c.BOOLECTOR_UNSAT" title="BOOLECTOR_UNSAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNSAT</span></code></a> or <a class="reference internal" href="#c.BOOLECTOR_UNKNOWN" title="BOOLECTOR_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNKNOWN</span></code></a>. Otherwise, it always returns
-<a class="reference internal" href="#c.BOOLECTOR_PARSE_UNKNOWN" title="BOOLECTOR_PARSE_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_PARSE_UNKNOWN</span></code></a>. If a parse error occurs the function
-returns <a class="reference internal" href="#c.BOOLECTOR_PARSE_ERROR" title="BOOLECTOR_PARSE_ERROR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_PARSE_ERROR</span></code></a>.</p>
+<dd class="field-even"><p>If the input issues a call to check sat (in case of incremental
+SMT-LIB v1 case or SMT-LIB v2), this function returns either
+<a class="reference internal" href="#c.BOOLECTOR_SAT" title="BOOLECTOR_SAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_SAT</span></code></a>, <a class="reference internal" href="#c.BOOLECTOR_UNSAT" title="BOOLECTOR_UNSAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNSAT</span></code></a> or <a class="reference internal" href="#c.BOOLECTOR_UNKNOWN" title="BOOLECTOR_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNKNOWN</span></code></a>. Otherwise, it
+always returns <a class="reference internal" href="#c.BOOLECTOR_PARSE_UNKNOWN" title="BOOLECTOR_PARSE_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_PARSE_UNKNOWN</span></code></a>. If a parse error occurs the
+function returns <a class="reference internal" href="#c.BOOLECTOR_PARSE_ERROR" title="BOOLECTOR_PARSE_ERROR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_PARSE_ERROR</span></code></a>.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2264,10 +2398,10 @@ int32_t <code class="sig-name descname">boolector_parse_smt1</code><span class="
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>In the incremental case (right now <a class="reference external" href="http://smtlib.cs.uiowa.edu/papers/format-v1.2-r06.08.30.pdf">SMT-LIB v1</a> only) the function
-returns either <a class="reference internal" href="#c.BOOLECTOR_SAT" title="BOOLECTOR_SAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_SAT</span></code></a>, <a class="reference internal" href="#c.BOOLECTOR_UNSAT" title="BOOLECTOR_UNSAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNSAT</span></code></a> or <a class="reference internal" href="#c.BOOLECTOR_UNKNOWN" title="BOOLECTOR_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNKNOWN</span></code></a>,
-otherwise it always returns <a class="reference internal" href="#c.BOOLECTOR_UNKNOWN" title="BOOLECTOR_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNKNOWN</span></code></a>. If a parse error
-occurs the function returns <a class="reference internal" href="#c.BOOLECTOR_PARSE_ERROR" title="BOOLECTOR_PARSE_ERROR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_PARSE_ERROR</span></code></a>.</p>
+<dd class="field-even"><p>In the incremental case, the function returns either <a class="reference internal" href="#c.BOOLECTOR_SAT" title="BOOLECTOR_SAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_SAT</span></code></a>,
+<a class="reference internal" href="#c.BOOLECTOR_UNSAT" title="BOOLECTOR_UNSAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNSAT</span></code></a> or <a class="reference internal" href="#c.BOOLECTOR_UNKNOWN" title="BOOLECTOR_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNKNOWN</span></code></a>, otherwise it always returns
+<a class="reference internal" href="#c.BOOLECTOR_UNKNOWN" title="BOOLECTOR_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNKNOWN</span></code></a>. If a parse error occurs the function returns
+<a class="reference internal" href="#c.BOOLECTOR_PARSE_ERROR" title="BOOLECTOR_PARSE_ERROR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_PARSE_ERROR</span></code></a>.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2288,8 +2422,9 @@ int32_t <code class="sig-name descname">boolector_parse_smt2</code><span class="
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p><a class="reference internal" href="#c.BOOLECTOR_UNKNOWN" title="BOOLECTOR_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNKNOWN</span></code></a> or <a class="reference internal" href="#c.BOOLECTOR_PARSE_ERROR" title="BOOLECTOR_PARSE_ERROR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_PARSE_ERROR</span></code></a> if a parse error
-occurred.</p>
+<dd class="field-even"><p>The function returns either <a class="reference internal" href="#c.BOOLECTOR_SAT" title="BOOLECTOR_SAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_SAT</span></code></a>, <a class="reference internal" href="#c.BOOLECTOR_UNSAT" title="BOOLECTOR_UNSAT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNSAT</span></code></a> or
+<a class="reference internal" href="#c.BOOLECTOR_UNKNOWN" title="BOOLECTOR_UNKNOWN"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_UNKNOWN</span></code></a>. If a parse error occurs, the function returns
+<a class="reference internal" href="#c.BOOLECTOR_PARSE_ERROR" title="BOOLECTOR_PARSE_ERROR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">BOOLECTOR_PARSE_ERROR</span></code></a>.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -4248,63 +4383,51 @@ BoolectorNode *<code class="sig-name descname">boolector_zero</code><span class=
 </div>
 
 
-            <div class="clearer"></div>
+           </div>
+           
           </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">C Interface</a><ul>
-<li><a class="reference internal" href="#macros">Macros</a></li>
-<li><a class="reference internal" href="#typedefs">Typedefs</a></li>
-<li><a class="reference internal" href="#functions">Functions</a></li>
-<li><a class="reference internal" href="#deprecated">Deprecated</a></li>
-</ul>
-</li>
-</ul>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="cboolector_options.html" class="btn btn-neutral float-right" title="Boolector Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cboolector.html" class="btn btn-neutral float-left" title="Boolector C API documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="cboolector.html"
-                        title="previous chapter">Boolector C API documentation</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="cboolector_options.html"
-                        title="next chapter">Boolector Options</a></p>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, the authors of Boolector.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="cboolector_options.html" title="Boolector Options"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="cboolector.html" title="Boolector C API documentation"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Boolector 3.2.1 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="cboolector.html" >Boolector C API documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">C Interface</a></li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright 2007-2020 The authors of Boolector.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
-    </div>
-  </body>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
 </html>

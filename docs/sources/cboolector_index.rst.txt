@@ -1335,11 +1335,11 @@ Functions
   :param error_msg: Error message.
   :param status: Status of the input formula.
   :param parsed_smt2: Flag indicating if an SMT-LIB v2 was parsed.
-  :return: In the incremental case or in case of SMT-LIB v2 (which requires a
-           'check-sat' command), the function returns either :c:macro:`BOOLECTOR_SAT`,
-           :c:macro:`BOOLECTOR_UNSAT` or :c:macro:`BOOLECTOR_UNKNOWN`. Otherwise, it always returns
-           :c:macro:`BOOLECTOR_PARSE_UNKNOWN`. If a parse error occurs the function
-           returns :c:macro:`BOOLECTOR_PARSE_ERROR`.
+  :return: If the input issues a call to check sat (in case of incremental
+           SMT-LIB v1 case or SMT-LIB v2), this function returns either
+           :c:macro:`BOOLECTOR_SAT`, :c:macro:`BOOLECTOR_UNSAT` or :c:macro:`BOOLECTOR_UNKNOWN`. Otherwise, it
+           always returns :c:macro:`BOOLECTOR_PARSE_UNKNOWN`. If a parse error occurs the
+           function returns :c:macro:`BOOLECTOR_PARSE_ERROR`.
 
 
 .. c:function:: int32_t boolector_parse_btor (Btor *btor, FILE *infile, const char *infile_name, FILE *outfile, char **error_msg, int32_t *status)
@@ -1386,10 +1386,10 @@ Functions
   :param outfile: Input file.
   :param error_msg: Error message.
   :param status: Status of the input formula.
-  :return: In the incremental case (right now `SMT-LIB v1`_ only) the function
-           returns either :c:macro:`BOOLECTOR_SAT`, :c:macro:`BOOLECTOR_UNSAT` or :c:macro:`BOOLECTOR_UNKNOWN`,
-           otherwise it always returns :c:macro:`BOOLECTOR_UNKNOWN`. If a parse error
-           occurs the function returns :c:macro:`BOOLECTOR_PARSE_ERROR`.
+  :return: In the incremental case, the function returns either :c:macro:`BOOLECTOR_SAT`,
+           :c:macro:`BOOLECTOR_UNSAT` or :c:macro:`BOOLECTOR_UNKNOWN`, otherwise it always returns
+           :c:macro:`BOOLECTOR_UNKNOWN`. If a parse error occurs the function returns
+           :c:macro:`BOOLECTOR_PARSE_ERROR`.
 
 
 .. c:function:: int32_t boolector_parse_smt2 (Btor *btor, FILE *infile, const char *infile_name, FILE *outfile, char **error_msg, int32_t *status)
@@ -1402,8 +1402,9 @@ Functions
   :param outfile: Output file.
   :param error_msg: Error message.
   :param status: Status of the input formula.
-  :return: :c:macro:`BOOLECTOR_UNKNOWN` or :c:macro:`BOOLECTOR_PARSE_ERROR` if a parse error
-           occurred.
+  :return: The function returns either :c:macro:`BOOLECTOR_SAT`, :c:macro:`BOOLECTOR_UNSAT` or
+           :c:macro:`BOOLECTOR_UNKNOWN`. If a parse error occurs, the function returns
+           :c:macro:`BOOLECTOR_PARSE_ERROR`.
 
 
 .. c:function:: void boolector_pop (Btor *btor, uint32_t level)
