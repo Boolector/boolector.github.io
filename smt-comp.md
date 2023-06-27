@@ -18,23 +18,27 @@
     - *Model Validation Track:*&nbsp; QF_BV
   - **Awards:**
     - Single Query Track
-       - **1<sup>st</sup>** place in division [QF_ABV](https://smt-comp.github.io/2019/results/qf-abv-single-query) 
-       - **1<sup>st</sup>** place in division [QF_BV](https://smt-comp.github.io/2019/results/qf-bv-single-query)
+       - **1<sup>st</sup>** place in division [QF_ABV](https://smt-comp.github.io/2019/results/qf-abv-single-query) (sequential, sat)
+       - **1<sup>st</sup>** place in division [QF_BV](https://smt-comp.github.io/2019/results/qf-bv-single-query) (sequential, parallel, sat, unsat)
     - Challenge Track
-       - **1<sup>st</sup>** place in division [QF_ABV (non-incremental)](https://smt-comp.github.io/2019/results/qf-abv-challenge-non-incremental)
-       - **1<sup>st</sup>** place in division [QF_ABV (incremental)](https://smt-comp.github.io/2019/results/qf-abv-challenge-incremental)
-       - **1<sup>st</sup>** place in division [QF_AUFBV (non-incremental)](https://smt-comp.github.io/2019/results/qf-aufbv-challenge-non-incremental)
-       - **1<sup>st</sup>** place in division [QF_BV (non-incremental)](https://smt-comp.github.io/2019/results/qf-bv-challenge-non-incremental)
-       - **1<sup>st</sup>** place in division [QF_BV (incremental)](https://smt-comp.github.io/2019/results/qf-bv-challenge-incremental)
+       - **1<sup>st</sup>** place in division [QF_ABV [non-incrementa]](https://smt-comp.github.io/2019/results/qf-abv-challenge-non-incremental) (sequential, parallel, sat, 24s)
+       - **1<sup>st</sup>** place in division [QF_ABV [incremental]](https://smt-comp.github.io/2019/results/qf-abv-challenge-incremental) (all)
+       - **1<sup>st</sup>** place in division [QF_AUFBV [non-incremental]](https://smt-comp.github.io/2019/results/qf-aufbv-challenge-non-incremental) (unsat)
+       - **1<sup>st</sup>** place in division [QF_BV [non-incremental]](https://smt-comp.github.io/2019/results/qf-bv-challenge-non-incremental) (sequential)
+       - **1<sup>st</sup>** place in division [QF_BV [incremental]](https://smt-comp.github.io/2019/results/qf-bv-challenge-incremental) (all)
     - Model Validation Track
-       - **1<sup>st</sup>** place in division [QF_BV](https://smt-comp.github.io/2019/results/qf-bv-model-validation)
+       - **1<sup>st</sup>** place in division [QF_BV](https://smt-comp.github.io/2019/results/qf-bv-model-validation) (all)
     - [Biggest Lead](img/smtcomp19.jpg)
-       - **2<sup>nd</sup>** place (silver) in the [Challenge Track](https://smt-comp.github.io/2019/results/biggest-lead-challenge-incremental)
-       - **1<sup>st</sup>** place in the [Model Validation Track](https://smt-comp.github.io/2019/results/biggest-lead-model-validation)
+       - **2<sup>nd</sup>** place (silver) in the [Challenge Track [incremental]](https://smt-comp.github.io/2019/results/biggest-lead-challenge-incremental) (all)
+       - **1<sup>st</sup>** place (gold) in the [Challenge Track [non-incremental]](https://smt-comp.github.io/2019/results/biggest-lead-challenge-non-incremental) (unsat)
+       - **2<sup>nd</sup>** place (silver) in the [Challenge Track [non-incremental]](https://smt-comp.github.io/2019/results/biggest-lead-challenge-non-incremental) (sequential, 24s)
+       - **1<sup>st</sup>** place in the [Model Validation Track [experimental]](https://smt-comp.github.io/2019/results/biggest-lead-model-validation) (all)
     - [Largest Contribution](img/smtcomp19.jpg)
-       - **2<sup>nd</sup>** place (silver) in the [Incremental Track](https://smt-comp.github.io/2019/results/largest-contribution-incremental)
-       - **2<sup>nd</sup>** place (silver) in the [Challenge Track](https://smt-comp.github.io/2019/results/largest-contribution-challenge-incremental)
-       - **1<sup>st</sup>** place in the [Model Validation Track](https://smt-comp.github.io/2019/results/largest-contribution-model-validation)
+       - **2<sup>nd</sup>** place (silver) in the [Incremental Track](https://smt-comp.github.io/2019/results/largest-contribution-incremental) (all)
+       - **1<sup>st</sup>** place (gold) in the [Challenge Track [non-incremental]](https://smt-comp.github.io/2019/results/largest-contribution-challenge-non-incremental) (unsat)
+       - **2<sup>nd</sup>** place (silver) in the [Challenge Track [non-incremental]](https://smt-comp.github.io/2019/results/largest-contribution-challenge-non-incremental) (sequential, parallel, sat)
+       - **2<sup>nd</sup>** place (silver) in the [Challenge Track [incremental]](https://smt-comp.github.io/2019/results/largest-contribution-challenge-incremental) (all)
+       - **1<sup>st</sup>** place in the [Model Validation Track [experimental]](https://smt-comp.github.io/2019/results/largest-contribution-model-validation) (all)
 
     - [3 silver trophies](img/smtcomp19.jpg) for
       *Biggest Lead* in the Challenge track, and
@@ -55,13 +59,14 @@
     - *Application Track:*&nbsp; QF_BV, QF_ABV, QF_UFBV
   - **Awards:**
     - Main Track:
-      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/QF_ABV.html)
-      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2018/results/QF_BV.html)
-      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/QF_UFBV.html)
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/QF_ABV.html) (all)
+      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2018/results/QF_BV.html) (sequential)
+      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/QF_UFBV.html) (all)
     - Application Track:
-      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/QF_ABV-app.html)
-      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/QF_BV-app.html)
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2018/results/QF_ABV-app.html) (all)
+      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2018/results/QF_BV-app.html) (all)
     - One [Medal](img/flog18.jpg) in the [FLoC'18 Olympic Games](https://www.floc2018.org/floc-olympic-games/)
+    - Amazon Award
 
 <hr>
 
@@ -76,9 +81,10 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; BV, QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
   - **Awards:**
-    - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2017/results/QF_ABV.html) (Main Track)
-    - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2017/results/QF_BV.html) (Main Track)
-    - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2017/results/QF_UFBV.html) (Main Track)
+    - Main Track:
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2017/results/QF_ABV.html) (all)
+      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2017/results/QF_BV.html) (sequential)
+      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2017/results/QF_UFBV.html) (all)
 
 <hr>
 
@@ -93,9 +99,10 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; BV, UFBV, QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
   - **Awards:**
-    - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2016/results/QF_ABV.html) (Main Track)
-    - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2016/results/QF_BV.html) (Main Track)
-    - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2016/results/QF_UFBV.html) (Main Track)
+    - Main Track:
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2016/results/QF_ABV.html) (all)
+      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2016/results/QF_BV.html) (all)
+      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2016/results/QF_UFBV.html) (all)
 
 <hr>
 
@@ -111,9 +118,10 @@
     - *Main Track:*&nbsp; QF_ABV, QF_AUFBV, QF_BV, QF_UFBV
     - *Application Track:*&nbsp; QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2015/results/QF_ABV.html) (Main Track)
-    - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2015/results/QF_BV.html) (Main Track)
-    - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2015/results/QF_UFBV.html) (Main Track)
+    - Main Track:
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2015/results/QF_ABV.html) (all)
+      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2015/results/QF_BV.html) (all)
+      - **1<sup>st</sup>** place in [QF_UFBV](https://smt-comp.github.io/2015/results/QF_UFBV.html) (all)
 
 <hr>
 
@@ -128,8 +136,9 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_ABV, QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2014/results/QF_ABV.html) (Main Track)
-    - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2014/results/QF_BV.html) (Main Track)
+    - Main Track:
+      - **1<sup>st</sup>** place in [QF_ABV](https://smt-comp.github.io/2014/results/QF_ABV.html) (all)
+      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2014/results/QF_BV.html) (all)
     - One [G&ouml;del Medal](img/goedel.jpg) in the [FLoC'14 Olympic Games](http://vsl2014.at/olympics/)
 
 <hr>
@@ -151,8 +160,9 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** place in [QF_AUFBV](https://smt-comp.github.io/2012/results/QF_AUFBV.html) (Main Track)
-    - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2012/results/QF_AUFBV.html) (Main Track)
+    - Main Track:
+      - **1<sup>st</sup>** place in [QF_AUFBV](https://smt-comp.github.io/2012/results/QF_AUFBV.html)
+      - **1<sup>st</sup>** place in [QF_BV](https://smt-comp.github.io/2012/results/QF_AUFBV.html)
 
 <hr>
 
@@ -165,7 +175,8 @@
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** place in QF_AUFBV (Main Track)
+    - Main Track:
+      - **1<sup>st</sup>** place in QF_AUFBV
 
 <hr>
 
@@ -188,7 +199,8 @@ no participation
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV
   - **Awards:**
-    - **1<sup>st</sup>** place in QF_AUFBV (Main Track)
+    - Main Track:
+      - **1<sup>st</sup>** place in QF_AUFBV
 
 <hr>
 
@@ -201,7 +213,8 @@ no participation
   - **Divisions Entered:**
     - *Main Track:*&nbsp; QF_AUFBV, QF_BV 
   - **Awards:**
-    - **1<sup>st</sup>** place in QF_AUFBV (Main Track)
-    - **1<sup>st</sup>** place in QF_BV (Main Track)
+    - Main Track:
+      - **1<sup>st</sup>** place in QF_AUFBV
+      - **1<sup>st</sup>** place in QF_BV
 
 
